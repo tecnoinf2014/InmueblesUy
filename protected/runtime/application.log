@@ -1,0 +1,587 @@
+2014/05/31 14:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmuebles".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmuebles')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmuebles')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/inmuebles')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/inmuebles
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 14:23:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:14:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/index.php
+---
+2014/05/31 16:17:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:21:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:22:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:23:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:36:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:37:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:37:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:37:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:38:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:43:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 16:44:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/site/index
+---
+2014/05/31 16:45:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admm".' in /var/www/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admm')
+#1 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/InmueblesUy/index.php/admm
+---
+2014/05/31 16:45:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admim".' in /var/www/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admim')
+#1 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/InmueblesUy/index.php/admim
+---
+2014/05/31 16:45:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 16:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "InmueblesUy/index.php/admin".' in /var/www/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('InmueblesUy/ind...')
+#1 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/InmueblesUy/index.php/InmueblesUy/index.php/admin
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:14:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 18:15:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('clientes')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('clientes')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/clientes')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/clientes
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:15:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('clientes')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('clientes')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/clientes')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/clientes
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:16:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('clientes')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('clientes')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/clientes')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/clientes
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('clientes')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('clientes')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/clientes')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/clientes
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:17:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('clientes')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('clientes')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/clientes')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/clientes
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:22:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('clientes')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('clientes')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/clientes')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/clientes
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('clientes')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('clientes')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/clientes')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/clientes
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:30:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('clientes')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('clientes')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/clientes')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/clientes
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:32:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:36:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/index.php
+---
+2014/05/31 18:36:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in /var/www/yii_framework/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /var/www/yii_framework/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /var/www/yii_framework/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/page?view=about
+HTTP_REFERER=http://localhost/InmueblesUy/index.php
+---
+2014/05/31 18:36:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "empleados".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('empleados')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('empleados')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/empleados')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/empleados
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:46:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/05/31 18:46:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/admin
+HTTP_REFERER=http://localhost/InmueblesUy/index.php
+---
+2014/05/31 18:47:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /var/www/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#1 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/InmueblesUy/index.php/index
+---
+2014/05/31 18:47:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('clientes')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('clientes')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/clientes')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/clientes
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
+---
+2014/05/31 18:47:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/admin
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin/clientes
+---
