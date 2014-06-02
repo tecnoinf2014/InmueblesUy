@@ -1,5 +1,15 @@
 @CHARSET "UTF-8";
 
-.footer{
+footer{
 	text-align: center;
+ 	background-color: #1b1b1b; /* 1b1b1b; */
+	color: #ffffff;
+}
+
+.bg-admin{
+	background: url("../images/House_5.jpg") no-repeat;
+/* 	background-position:  */
+	width: auto;
+	width: 1550px;
+	height: 600px;
 }

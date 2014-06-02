@@ -6,7 +6,9 @@ class AdminController extends Controller
 	
 	public function actionIndex()
 	{
-		$this->render('index');
+		$model=new LoginForm;
+		$this->render('index',array("model"=>$model));
+// 		$this->render('index');
 	}
 
 	// Uncomment the following methods and override them if needed
