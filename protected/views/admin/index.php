@@ -49,7 +49,7 @@
 			    </form>
 			  </div>
 			
-			</div><!-- /.span4 -->
+			</div><!-- /.span4 fdsafds-->
 		</div><!-- /.row -->		
 	</div>
 </section>
