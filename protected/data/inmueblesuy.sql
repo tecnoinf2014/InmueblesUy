@@ -232,20 +232,20 @@ DROP TABLE IF EXISTS `inmuebles_uy`.`evento` ;
 CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`evento` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `descripcion` VARCHAR(500) NULL ,
-  `inmueble` INT NULL ,
-  `usuario` INT NULL ,
+  `inmueble` INT NOT NULL ,
+  `usuario` INT NOT NULL ,
   `fecha_inicio` DATETIME NOT NULL ,
   `fecha_fin` DATETIME NOT NULL ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `ID_UNIQUE` (`id` ASC) ,
-  INDEX `FK_INMUEBLE` (`inmueble` ASC) ,
-  INDEX `FK_USUARIO` (`usuario` ASC) ,
-  CONSTRAINT `FK_INMUEBLE`
+  INDEX `FK_INMUEBLE_EVE` (`inmueble` ASC) ,
+  INDEX `FK_USUARIO_EVE` (`usuario` ASC) ,
+  CONSTRAINT `FK_INMUEBLE_EVE`
     FOREIGN KEY (`inmueble` )
     REFERENCES `inmuebles_uy`.`inmueble` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `FK_USUARIO`
+  CONSTRAINT `FK_USUARIO_EVE`
     FOREIGN KEY (`usuario` )
     REFERENCES `inmuebles_uy`.`usuario` (`id` )
     ON DELETE NO ACTION
@@ -265,12 +265,39 @@ CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`imagen` (
   `name` VARCHAR(45) NOT NULL ,
   `img` BLOB NOT NULL ,
   `inmueble` INT NULL ,
+  `is_preview` TINYINT(1) NULL ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `ID_UNIQUE` (`id` ASC) ,
-  INDEX `FK_INMUEBLE` (`inmueble` ASC) ,
-  CONSTRAINT `FK_INMUEBLE`
+  INDEX `FK_INMUEBLE_IMG` (`inmueble` ASC) ,
+  CONSTRAINT `FK_INMUEBLE_IMG`
     FOREIGN KEY (`inmueble` )
     REFERENCES `inmuebles_uy`.`inmueble` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `inmuebles_uy`.`evento_cliente`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `inmuebles_uy`.`evento_cliente` ;
+
+CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`evento_cliente` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `evento` INT NOT NULL ,
+  `cliente` INT NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_evento` (`evento` ASC) ,
+  INDEX `fk_cliente` (`cliente` ASC) ,
+  CONSTRAINT `fk_evento`
+    FOREIGN KEY (`evento` )
+    REFERENCES `inmuebles_uy`.`evento` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_cliente`
+    FOREIGN KEY (`cliente` )
+    REFERENCES `inmuebles_uy`.`cliente` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB

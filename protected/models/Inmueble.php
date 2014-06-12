@@ -19,6 +19,8 @@
  *
  * The followings are the available model relations:
  * @property CompraVenta[] $compraVentas
+ * @property Evento[] $eventos
+ * @property Imagen[] $imagens
  * @property EstadoInmueble $estado0
  * @property TipoInmueble $tipoInmueble
  * @property Direccion $direccion0
@@ -61,6 +63,8 @@ class Inmueble extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'compraVentas' => array(self::HAS_MANY, 'CompraVenta', 'inmueble'),
+			'eventos' => array(self::HAS_MANY, 'Evento', 'inmueble'),
+			'imagens' => array(self::HAS_MANY, 'Imagen', 'inmueble'),
 			'estado0' => array(self::BELONGS_TO, 'EstadoInmueble', 'estado'),
 			'tipoInmueble' => array(self::BELONGS_TO, 'TipoInmueble', 'tipo_inmueble'),
 			'direccion0' => array(self::BELONGS_TO, 'Direccion', 'direccion'),
