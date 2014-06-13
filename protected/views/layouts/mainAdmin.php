@@ -51,8 +51,6 @@
 		</div>			
 	</div><!-- mainmenu -->
 	
-	<br/><br/>
-	
 	<?php echo $content; ?>	
 	
 	<footer>
