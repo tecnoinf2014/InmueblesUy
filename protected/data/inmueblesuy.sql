@@ -191,33 +191,40 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `inmuebles_uy`.`compra_venta`
+-- Table `inmuebles_uy`.`transaccion`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `inmuebles_uy`.`compra_venta` ;
+DROP TABLE IF EXISTS `inmuebles_uy`.`transaccion` ;
 
-CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`compra_venta` (
+CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`transaccion` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `cli_compra` INT NULL ,
   `cli_venta` INT NULL ,
   `inmueble` INT NULL ,
+  `tipo_contrato` INT NULL ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `ID_UNIQUE` (`id` ASC) ,
-  INDEX `FK_CLI_COMPRA` (`cli_compra` ASC) ,
-  INDEX `FK_CLI_VENTA` (`cli_venta` ASC) ,
-  INDEX `FK_INMUEBLE` (`inmueble` ASC) ,
-  CONSTRAINT `FK_CLI_COMPRA`
+  INDEX `FK_CLI_COMPRA_TR` (`cli_compra` ASC) ,
+  INDEX `FK_CLI_VENTA_TR` (`cli_venta` ASC) ,
+  INDEX `FK_INMUEBLE_TR` (`inmueble` ASC) ,
+  INDEX `FK_CONTRATO_TR` (`tipo_contrato` ASC) ,
+  CONSTRAINT `FK_CLI_COMPRA_TR`
     FOREIGN KEY (`cli_compra` )
     REFERENCES `inmuebles_uy`.`cliente` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `FK_CLI_VENTA`
+  CONSTRAINT `FK_CLI_VENTA_TR`
     FOREIGN KEY (`cli_venta` )
     REFERENCES `inmuebles_uy`.`cliente` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `FK_INMUEBLE`
+  CONSTRAINT `FK_INMUEBLE_TR`
     FOREIGN KEY (`inmueble` )
     REFERENCES `inmuebles_uy`.`inmueble` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_CONTRATO_TR`
+    FOREIGN KEY (`tipo_contrato` )
+    REFERENCES `inmuebles_uy`.`tipo_contrato` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -236,10 +243,12 @@ CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`evento` (
   `usuario` INT NOT NULL ,
   `fecha_inicio` DATETIME NOT NULL ,
   `fecha_fin` DATETIME NOT NULL ,
+  `cliente` INT NOT NULL ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `ID_UNIQUE` (`id` ASC) ,
   INDEX `FK_INMUEBLE_EVE` (`inmueble` ASC) ,
   INDEX `FK_USUARIO_EVE` (`usuario` ASC) ,
+  INDEX `FK_CLIENTE_EVE` (`cliente` ASC) ,
   CONSTRAINT `FK_INMUEBLE_EVE`
     FOREIGN KEY (`inmueble` )
     REFERENCES `inmuebles_uy`.`inmueble` (`id` )
@@ -248,6 +257,11 @@ CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`evento` (
   CONSTRAINT `FK_USUARIO_EVE`
     FOREIGN KEY (`usuario` )
     REFERENCES `inmuebles_uy`.`usuario` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_CLIENTE_EVE`
+    FOREIGN KEY (`cliente` )
+    REFERENCES `inmuebles_uy`.`cliente` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -272,32 +286,6 @@ CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`imagen` (
   CONSTRAINT `FK_INMUEBLE_IMG`
     FOREIGN KEY (`inmueble` )
     REFERENCES `inmuebles_uy`.`inmueble` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `inmuebles_uy`.`evento_cliente`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `inmuebles_uy`.`evento_cliente` ;
-
-CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`evento_cliente` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
-  `evento` INT NOT NULL ,
-  `cliente` INT NOT NULL ,
-  PRIMARY KEY (`id`) ,
-  INDEX `fk_evento` (`evento` ASC) ,
-  INDEX `fk_cliente` (`cliente` ASC) ,
-  CONSTRAINT `fk_evento`
-    FOREIGN KEY (`evento` )
-    REFERENCES `inmuebles_uy`.`evento` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_cliente`
-    FOREIGN KEY (`cliente` )
-    REFERENCES `inmuebles_uy`.`cliente` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB

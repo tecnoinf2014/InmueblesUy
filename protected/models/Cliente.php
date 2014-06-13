@@ -12,8 +12,9 @@
  * @property string $telefono
  *
  * The followings are the available model relations:
- * @property CompraVenta[] $compraVentas
- * @property CompraVenta[] $compraVentas1
+ * @property Evento[] $eventos
+ * @property Transaccion[] $transaccions
+ * @property Transaccion[] $transaccions1
  */
 class Cliente extends CActiveRecord
 {
@@ -47,11 +48,12 @@ class Cliente extends CActiveRecord
 	 */
 	public function relations()
 	{
-		/// NOTE: you may need to adjust the relation name and the related
+		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'compraCli' => array(self::HAS_MANY, 'CompraVenta', 'cli_compra'),
-			'ventasCli' => array(self::HAS_MANY, 'CompraVenta', 'cli_venta'),
+			'eventos' => array(self::HAS_MANY, 'Evento', 'cliente'),
+			'transaccions' => array(self::HAS_MANY, 'Transaccion', 'cli_compra'),
+			'transaccions1' => array(self::HAS_MANY, 'Transaccion', 'cli_venta'),
 		);
 	}
 
