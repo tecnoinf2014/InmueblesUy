@@ -8,8 +8,7 @@ footer{
 
 .bg-admin{
 	background: url("../images/House_5.jpg") no-repeat;
-/* 	background-position:  */
 	width: auto;
-	width: 1550px;
-	height: 600px;
+	width: 120em;
+	height: 45em;
 }

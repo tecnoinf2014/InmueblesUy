@@ -1,29 +1,29 @@
 <?php
 
 /**
- * This is the model class for table "cliente".
+ * This is the model class for table "transaccion".
  *
- * The followings are the available columns in table 'cliente':
+ * The followings are the available columns in table 'transaccion':
  * @property integer $id
- * @property string $nombre
- * @property string $apellido
- * @property string $email
- * @property string $ci
- * @property string $telefono
+ * @property integer $cli_compra
+ * @property integer $cli_venta
+ * @property integer $inmueble
+ * @property integer $tipo_contrato
  *
  * The followings are the available model relations:
- * @property Evento[] $eventos
- * @property Transaccion[] $transaccions
- * @property Transaccion[] $transaccions1
+ * @property Cliente $cliCompra
+ * @property Cliente $cliVenta
+ * @property Inmueble $inmueble0
+ * @property TipoContrato $tipoContrato
  */
-class Cliente extends CActiveRecord
+class Transaccion extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'cliente';
+		return 'transaccion';
 	}
 
 	/**
@@ -34,12 +34,10 @@ class Cliente extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre, apellido, email, ci', 'required'),
-			array('nombre, apellido, email, telefono', 'length', 'max'=>45),
-			array('ci', 'length', 'max'=>10),
+			array('cli_compra, cli_venta, inmueble, tipo_contrato', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, nombre, apellido, email, ci, telefono', 'safe', 'on'=>'search'),
+			array('id, cli_compra, cli_venta, inmueble, tipo_contrato', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,12 +46,13 @@ class Cliente extends CActiveRecord
 	 */
 	public function relations()
 	{
-		/// NOTE: you may need to adjust the relation name and the related
+		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'eventos' => array(self::HAS_MANY, 'Evento', 'cliente'),
-			'transaccions' => array(self::HAS_MANY, 'Transaccion', 'cli_compra'),
-			'transaccions1' => array(self::HAS_MANY, 'Transaccion', 'cli_venta'),
+			'cliCompra' => array(self::BELONGS_TO, 'Cliente', 'cli_compra'),
+			'cliVenta' => array(self::BELONGS_TO, 'Cliente', 'cli_venta'),
+			'inmueble0' => array(self::BELONGS_TO, 'Inmueble', 'inmueble'),
+			'tipoContrato' => array(self::BELONGS_TO, 'TipoContrato', 'tipo_contrato'),
 		);
 	}
 
@@ -64,11 +63,10 @@ class Cliente extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'nombre' => 'Nombre',
-			'apellido' => 'Apellido',
-			'email' => 'Email',
-			'ci' => 'Ci',
-			'telefono' => 'Telefono',
+			'cli_compra' => 'Cli Compra',
+			'cli_venta' => 'Cli Venta',
+			'inmueble' => 'Inmueble',
+			'tipo_contrato' => 'Tipo Contrato',
 		);
 	}
 
@@ -91,11 +89,10 @@ class Cliente extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('nombre',$this->nombre,true);
-		$criteria->compare('apellido',$this->apellido,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('ci',$this->ci,true);
-		$criteria->compare('telefono',$this->telefono,true);
+		$criteria->compare('cli_compra',$this->cli_compra);
+		$criteria->compare('cli_venta',$this->cli_venta);
+		$criteria->compare('inmueble',$this->inmueble);
+		$criteria->compare('tipo_contrato',$this->tipo_contrato);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -106,7 +103,7 @@ class Cliente extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Cliente the static model class
+	 * @return Transaccion the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

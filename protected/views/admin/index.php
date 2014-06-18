@@ -2,10 +2,10 @@
 /* @var $this AdminController */
 ?>
 <section class="bg-admin pd4">
-
+	
 	<div class="container center">
 	  <div class="row-fluid">
-			<div class="span4">
+			<div class="span4" style="margin-top: 5%;">
 			
 			  <div class="well">
 				<?php $form=$this->beginWidget('CActiveForm', array(

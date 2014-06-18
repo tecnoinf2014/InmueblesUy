@@ -18,13 +18,13 @@
  * @property integer $plantas
  *
  * The followings are the available model relations:
- * @property CompraVenta[] $compraVentas
  * @property Evento[] $eventos
  * @property Imagen[] $imagens
  * @property EstadoInmueble $estado0
  * @property TipoInmueble $tipoInmueble
  * @property Direccion $direccion0
  * @property TipoContrato $tipoContrato
+ * @property Transaccion[] $transaccions
  */
 class Inmueble extends CActiveRecord
 {
@@ -62,13 +62,13 @@ class Inmueble extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'compraVentas' => array(self::HAS_MANY, 'CompraVenta', 'inmueble'),
 			'eventos' => array(self::HAS_MANY, 'Evento', 'inmueble'),
 			'imagens' => array(self::HAS_MANY, 'Imagen', 'inmueble'),
 			'estado0' => array(self::BELONGS_TO, 'EstadoInmueble', 'estado'),
 			'tipoInmueble' => array(self::BELONGS_TO, 'TipoInmueble', 'tipo_inmueble'),
 			'direccion0' => array(self::BELONGS_TO, 'Direccion', 'direccion'),
 			'tipoContrato' => array(self::BELONGS_TO, 'TipoContrato', 'tipo_contrato'),
+			'transaccions' => array(self::HAS_MANY, 'Transaccion', 'inmueble'),
 		);
 	}
 

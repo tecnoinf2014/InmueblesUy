@@ -9,6 +9,7 @@
  *
  * The followings are the available model relations:
  * @property Inmueble[] $inmuebles
+ * @property Transaccion[] $transaccions
  */
 class TipoContrato extends CActiveRecord
 {
@@ -46,6 +47,7 @@ class TipoContrato extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'inmuebles' => array(self::HAS_MANY, 'Inmueble', 'tipo_contrato'),
+			'transaccions' => array(self::HAS_MANY, 'Transaccion', 'tipo_contrato'),
 		);
 	}
 

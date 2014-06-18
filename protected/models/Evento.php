@@ -10,11 +10,12 @@
  * @property integer $usuario
  * @property string $fecha_inicio
  * @property string $fecha_fin
+ * @property integer $cliente
  *
  * The followings are the available model relations:
  * @property Inmueble $inmueble0
  * @property Usuario $usuario0
- * @property EventoCliente[] $eventoClientes
+ * @property Cliente $cliente0
  */
 class Evento extends CActiveRecord
 {
@@ -34,12 +35,12 @@ class Evento extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('inmueble, usuario, fecha_inicio, fecha_fin', 'required'),
-			array('inmueble, usuario', 'numerical', 'integerOnly'=>true),
+			array('inmueble, usuario, fecha_inicio, fecha_fin, cliente', 'required'),
+			array('inmueble, usuario, cliente', 'numerical', 'integerOnly'=>true),
 			array('descripcion', 'length', 'max'=>500),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, descripcion, inmueble, usuario, fecha_inicio, fecha_fin', 'safe', 'on'=>'search'),
+			array('id, descripcion, inmueble, usuario, fecha_inicio, fecha_fin, cliente', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,7 +54,7 @@ class Evento extends CActiveRecord
 		return array(
 			'inmueble0' => array(self::BELONGS_TO, 'Inmueble', 'inmueble'),
 			'usuario0' => array(self::BELONGS_TO, 'Usuario', 'usuario'),
-			'eventoClientes' => array(self::HAS_MANY, 'EventoCliente', 'evento'),
+			'cliente0' => array(self::BELONGS_TO, 'Cliente', 'cliente'),
 		);
 	}
 
@@ -69,6 +70,7 @@ class Evento extends CActiveRecord
 			'usuario' => 'Usuario',
 			'fecha_inicio' => 'Fecha Inicio',
 			'fecha_fin' => 'Fecha Fin',
+			'cliente' => 'Cliente',
 		);
 	}
 
@@ -96,6 +98,7 @@ class Evento extends CActiveRecord
 		$criteria->compare('usuario',$this->usuario);
 		$criteria->compare('fecha_inicio',$this->fecha_inicio,true);
 		$criteria->compare('fecha_fin',$this->fecha_fin,true);
+		$criteria->compare('cliente',$this->cliente);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
