@@ -22,6 +22,7 @@ class Cliente extends CActiveRecord
 	 * @return string the associated database table name
 	 * Juan
 	 * Fede
+	 * Agrego en develop 2
 	 * 
 	 */
 	public function tableName()
