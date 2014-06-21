@@ -19,7 +19,7 @@
 class Cliente extends CActiveRecord
 {
 	/**
-	 * @return string the associated database table name cambio en develop
+	 * @return string the associated database table name
 	 * 
 	 * 
 	 */
