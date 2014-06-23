@@ -35,14 +35,15 @@ class SiteController extends Controller
 	/**
 	 * Displays the contact page
 	 */
-	public function actionContact()
+	public function actionContacto()
 	{
-		$model=new ContactForm;
-		if(isset($_POST['ContactForm']))
+		$model=new ContactoForm;
+		if(isset($_POST['ContactoForm']))
 		{
-			$model->attributes=$_POST['ContactForm'];
+			$model->attributes=$_POST['ContactoForm'];
 			if($model->validate())
 			{
+				/*
 				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
 				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
 				$headers="From: $name <{$model->email}>\r\n".
@@ -53,9 +54,10 @@ class SiteController extends Controller
 				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
 				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
 				$this->refresh();
+				*/
 			}
 		}
-		$this->render('contact',array('model'=>$model));
+		$this->render('contacto',array('model'=>$model));
 	}
 
 	/**

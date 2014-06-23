@@ -705,3 +705,78 @@ Stack trace:
 REQUEST_URI=/InmueblesUy/index.php/admin/inmuebles
 HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin
 ---
+2014/06/22 19:27:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contacto".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('contacto')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('contacto')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacto')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/contacto
+HTTP_REFERER=http://localhost/InmueblesUy/
+---
+2014/06/22 19:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contacto".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('contacto')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('contacto')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacto')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/contacto
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/site/index
+---
+2014/06/22 19:46:43 [error] [php] include(CFromModel.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/models/ContactoForm.php(4): spl_autoload_call()
+#1 /var/www/yii_framework/framework/YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 /var/www/InmueblesUy/protected/controllers/SiteController.php(40): spl_autoload_call()
+#4 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionContacto()
+#5 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii_framework/framework/web/CController.php(286): SiteController->runAction()
+#7 /var/www/yii_framework/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/site/contacto
+in /var/www/InmueblesUy/protected/models/ContactoForm.php (4)
+in /var/www/InmueblesUy/protected/controllers/SiteController.php (40)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/22 19:47:47 [error] [php] include(CFromModel.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/models/ContactoForm.php(4): spl_autoload_call()
+#1 /var/www/yii_framework/framework/YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 /var/www/InmueblesUy/protected/controllers/SiteController.php(40): spl_autoload_call()
+#4 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionContacto()
+#5 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii_framework/framework/web/CController.php(286): SiteController->runAction()
+#7 /var/www/yii_framework/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/site/contacto
+in /var/www/InmueblesUy/protected/models/ContactoForm.php (4)
+in /var/www/InmueblesUy/protected/controllers/SiteController.php (40)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/22 21:33:08 [error] [php] Undefined variable: attribraute (/var/www/InmueblesUy/protected/views/site/contacto.php:74)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii_framework/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/InmueblesUy/protected/controllers/SiteController.php(60): SiteController->render()
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionContacto()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii_framework/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii_framework/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/site/contacto
+in /var/www/InmueblesUy/protected/views/site/contacto.php (74)
+in /var/www/InmueblesUy/protected/controllers/SiteController.php (60)
+in /var/www/InmueblesUy/index.php (13)
