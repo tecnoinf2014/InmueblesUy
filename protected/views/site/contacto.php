@@ -108,4 +108,8 @@ $this->breadcrumbs=array(
 	<div id="consultar" class="well">
 		<h4>Seleccione el inmueble</h4>
 	</div>
+	
+	
+</div>
+
 </div>
