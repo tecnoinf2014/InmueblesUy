@@ -91,25 +91,103 @@ $this->breadcrumbs=array(
 		</div>		
 	</div>
 	
-	<?php $this->endWidget(); ?>
-	
 	<div id="divPublicar" class="well">
 		<h4>Datos del Inmueble</h4>
 
 			<div class="control-group">
-				<?php //echo $form->labelEx($model,'tipo', array('class'=>'control-label label-form')); ?>
-				<?php //echo $form->dropDownList($model, 'tipo', $data); ?>
-				<?php //echo $form->error($model,'tipo'); ?>
+				<?php echo $form->labelEx($model,'tipo', array('class'=>'control-label label-form')); ?>
+				<?php echo $form->dropDownList($model, 'tipo', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->error($model,'tipo'); ?>
 			</div>		
+
+			<div class="control-group">
+				<?php echo $form->labelEx($model,'contrato', array('class'=>'control-label label-form')); ?>
+				<?php echo $form->dropDownList($model, 'contrato', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->error($model,'contrato'); ?>
+			</div>			
+
+			<div class="control-group">
+				<?php echo $form->labelEx($model,'habitaciones', array('class'=>'control-label label-form')); ?>
+				<?php echo $form->dropDownList($model, 'habitaciones', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->error($model,'habitaciones'); ?>
+			</div>			
+
+			<div class="control-group">
+				<?php echo $form->labelEx($model,'banios', array('class'=>'control-label label-form')); ?>
+				<?php echo $form->dropDownList($model, 'banios', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->error($model,'banios'); ?>
+			</div>			
+
+			<div class="control-group">
+				<?php echo $form->labelEx($model,'plantas', array('class'=>'control-label label-form')); ?>
+				<?php echo $form->dropDownList($model, 'plantas', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->error($model,'plantas'); ?>
+			</div>			
+
+			<div class="control-group">
+				<?php echo $form->labelEx($model,'mtsCuadrados',array('class'=>'control-label label-form')); ?>
+				<?php echo $form->numberField($model,'mtsCuadrados'); ?>
+				<?php echo $form->error($model,'mtsCuadrados'); ?>
+			</div>			
+
+			<div class="control-group">
+				<?php echo $form->labelEx($model,'precio',array('class'=>'control-label label-form')); ?>
+				<?php echo $form->numberField($model,'precio'); ?>
+				<?php echo $form->error($model,'precio'); ?>
+			</div>			
+
+			<div class="control-group">
+				<?php echo $form->labelEx($model,'garage',array('class'=>'control-label label-form')); ?>
+				<?php echo $form->checkBox($model,'garage'); ?>
+				<?php echo $form->error($model,'garage'); ?>
+			</div>			
+
+			<div class="control-group">
+				<?php echo $form->labelEx($model,'descripcionInmueble', array('class'=>'control-label label-form')); ?>
+				<?php echo $form->textArea($model,'descripcionInmueble'); ?>
+				<?php echo $form->error($model,'descripcionInmueble'); ?>
+			</div>			
+			
+			<h5>Direcci&oacuten del Inmueble</h5>
+				<div class="controls controls-row">
+					<div>
+						<?php echo $form->labelEx($model,'calle', array('class'=>'control-label label-form'))?>
+						<?php echo $form->textField($model,'calle'); ?>
+						<?php echo $form->error($model,'calle'); ?>
+					</div>		
 		
+					<div>
+						<?php echo $form->labelEx($model,'nroPuerta', array('class'=>'control-label label-form'))?>
+						<?php echo $form->numberField($model,'nroPuerta'); ?>
+						<?php echo $form->error($model,'nroPuerta'); ?>
+					</div>			
 		
+					<div>
+						<?php echo $form->labelEx($model,'apto', array('class'=>'control-label label-form'))?>
+						<?php echo $form->numberField($model,'apto'); ?>
+						<?php echo $form->error($model,'apto'); ?>
+					</div>						
+				</div>
+			
+				<div class="controls controls-row">
+					<div>
+						<?php echo $form->labelEx($model,'depto', array('class'=>'control-label label-form')); ?>
+						<?php echo $form->dropDownList($model, 'depto', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+						<?php echo $form->error($model,'depto'); ?>
+					</div>		
+					<div>
+						<?php echo $form->labelEx($model,'barrio', array('class'=>'control-label label-form'))?>
+						<?php echo $form->textField($model,'barrio'); ?>
+						<?php echo $form->error($model,'barrio'); ?>
+					</div>			
+				</div>			
 	</div>
 
-	<div id="consultar" class="well">
-		<h4>Seleccione el inmueble</h4>
+		<div id="consultar" class="well">
+			<h4>Seleccione el inmueble</h4>				
+		</div>		
+		<?php echo CHtml::submitButton('Enviar',array("class"=>"btn btn-primary")); ?>
 	</div>
 	
-	
-</div>
-
+<?php $this->endWidget(); ?>
 </div>
