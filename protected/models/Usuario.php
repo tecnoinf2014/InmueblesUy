@@ -17,6 +17,17 @@
  */
 class Usuario extends CActiveRecord
 {
+	
+	public $id;
+	public $nombres;
+	public $apellido;
+	public $ci;
+	public $email;
+	public $password;
+	public $telefono;
+	
+	
+	
 	/**
 	 * @return string the associated database table name
 	 */
@@ -25,6 +36,12 @@ class Usuario extends CActiveRecord
 		return 'usuario';
 	}
 
+
+	public function safeAttributes()
+	{
+		return 'id, nombres, password, email, apellido,ci,telefono';
+	}
+	
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -33,11 +50,12 @@ class Usuario extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombres, apellido', 'required'),
-			array('nombres, apellido, email, password, telefono', 'length', 'max'=>45),
+			array('nombres, apellido,email,password', 'required'),
+			array('nombres, apellido, email, password, telefono,telefono', 'length', 'max'=>45),
 			array('ci', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
+			
 			array('id, nombres, apellido, ci, email, password, telefono', 'safe', 'on'=>'search'),
 		);
 	}
@@ -100,7 +118,9 @@ class Usuario extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
 
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
