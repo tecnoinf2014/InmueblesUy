@@ -85,7 +85,7 @@ $this->breadcrumbs=array(
 		
 			<div class="control-group">
 				<?php echo $form->labelEx($model,'comentario', array('class'=>'control-label label-form')); ?>
-				<?php echo $form->textArea($model,'comentario'); ?>
+				<?php echo $form->textArea($model,'comentario', array('rows' => '5')); ?>
 				<?php echo $form->error($model,'comentario'); ?>
 			</div>	
 		</div>		
@@ -96,43 +96,43 @@ $this->breadcrumbs=array(
 
 			<div class="control-group">
 				<?php echo $form->labelEx($model,'tipo', array('class'=>'control-label label-form')); ?>
-				<?php echo $form->dropDownList($model, 'tipo', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->dropDownList($model, 'tipo', $this->getDisplayTipoInmuebles()); ?>
 				<?php echo $form->error($model,'tipo'); ?>
 			</div>		
 
 			<div class="control-group">
 				<?php echo $form->labelEx($model,'contrato', array('class'=>'control-label label-form')); ?>
-				<?php echo $form->dropDownList($model, 'contrato', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->dropDownList($model, 'contrato', $this->getDisplayTipoContratoInmueble()); ?>
 				<?php echo $form->error($model,'contrato'); ?>
 			</div>			
 
 			<div class="control-group">
 				<?php echo $form->labelEx($model,'habitaciones', array('class'=>'control-label label-form')); ?>
-				<?php echo $form->dropDownList($model, 'habitaciones', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->dropDownList($model, 'habitaciones', $this->getDisplayOptions(), array('empty'=>'')); ?>
 				<?php echo $form->error($model,'habitaciones'); ?>
 			</div>			
 
 			<div class="control-group">
 				<?php echo $form->labelEx($model,'banios', array('class'=>'control-label label-form')); ?>
-				<?php echo $form->dropDownList($model, 'banios', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->dropDownList($model, 'banios', $this->getDisplayOptions(), array('empty'=>'')); ?>
 				<?php echo $form->error($model,'banios'); ?>
 			</div>			
 
 			<div class="control-group">
 				<?php echo $form->labelEx($model,'plantas', array('class'=>'control-label label-form')); ?>
-				<?php echo $form->dropDownList($model, 'plantas', array(1=>'USA',2=>'France',3=>'Japan')); ?>
+				<?php echo $form->dropDownList($model, 'plantas', $this->getDisplayOptions(), array('empty'=>'')); ?>
 				<?php echo $form->error($model,'plantas'); ?>
 			</div>			
 
 			<div class="control-group">
 				<?php echo $form->labelEx($model,'mtsCuadrados',array('class'=>'control-label label-form')); ?>
-				<?php echo $form->numberField($model,'mtsCuadrados'); ?>
+				<?php echo $form->numberField($model,'mtsCuadrados', array('class'=> 'span1')); ?>
 				<?php echo $form->error($model,'mtsCuadrados'); ?>
 			</div>			
 
 			<div class="control-group">
 				<?php echo $form->labelEx($model,'precio',array('class'=>'control-label label-form')); ?>
-				<?php echo $form->numberField($model,'precio'); ?>
+				<?php echo $form->numberField($model,'precio', array('class'=> 'span1')); ?>
 				<?php echo $form->error($model,'precio'); ?>
 			</div>			
 
@@ -149,37 +149,41 @@ $this->breadcrumbs=array(
 			</div>			
 			
 			<h5>Direcci&oacuten del Inmueble</h5>
-				<div class="controls controls-row">
-					<div>
-						<?php echo $form->labelEx($model,'calle', array('class'=>'control-label label-form'))?>
-						<?php echo $form->textField($model,'calle'); ?>
-						<?php echo $form->error($model,'calle'); ?>
-					</div>		
-		
-					<div>
-						<?php echo $form->labelEx($model,'nroPuerta', array('class'=>'control-label label-form'))?>
-						<?php echo $form->numberField($model,'nroPuerta'); ?>
-						<?php echo $form->error($model,'nroPuerta'); ?>
-					</div>			
-		
-					<div>
-						<?php echo $form->labelEx($model,'apto', array('class'=>'control-label label-form'))?>
-						<?php echo $form->numberField($model,'apto'); ?>
-						<?php echo $form->error($model,'apto'); ?>
-					</div>						
+				<div class="row">
+					<div class="span9">
+						<div class="control-group">
+							<?php echo $form->labelEx($model,'calle', array('class'=>'control-label label-form'))?>
+							<?php echo $form->textField($model,'calle'); ?>
+							<?php echo $form->error($model,'calle'); ?>
+						</div>		
+			
+						<div class="control-group">
+							<?php echo $form->labelEx($model,'nroPuerta', array('class'=>'control-label label-form'))?>
+							<?php echo $form->numberField($model,'nroPuerta', array('class'=> 'span1')); ?>
+							<?php echo $form->error($model,'nroPuerta'); ?>
+						</div>			
+			
+						<div class="control-group">
+							<?php echo $form->labelEx($model,'apto', array('class'=>'control-label label-form'))?>
+							<?php echo $form->numberField($model,'apto', array('class'=> 'span1')); ?>
+							<?php echo $form->error($model,'apto'); ?>
+						</div>
+					</div>							
 				</div>
 			
-				<div class="controls controls-row">
-					<div>
-						<?php echo $form->labelEx($model,'depto', array('class'=>'control-label label-form')); ?>
-						<?php echo $form->dropDownList($model, 'depto', array(1=>'USA',2=>'France',3=>'Japan')); ?>
-						<?php echo $form->error($model,'depto'); ?>
-					</div>		
-					<div>
-						<?php echo $form->labelEx($model,'barrio', array('class'=>'control-label label-form'))?>
-						<?php echo $form->textField($model,'barrio'); ?>
-						<?php echo $form->error($model,'barrio'); ?>
-					</div>			
+				<div class="row">
+					<div class="span9">
+						<div class="control-group">
+							<?php echo $form->labelEx($model,'depto', array('class'=>'control-label label-form')); ?>
+							<?php echo $form->dropDownList($model, 'depto', $this->getDisplayDeptos()); ?>
+							<?php echo $form->error($model,'depto'); ?>
+						</div>		
+						<div class="control-group">
+							<?php echo $form->labelEx($model,'barrio', array('class'=>'control-label label-form'))?>
+							<?php echo $form->textField($model,'barrio'); ?>
+							<?php echo $form->error($model,'barrio'); ?>
+						</div>			
+					</div>
 				</div>			
 	</div>
 
