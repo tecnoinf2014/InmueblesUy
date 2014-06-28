@@ -27,10 +27,10 @@ class SiteController extends Controller
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
-	public function actionIndex()
-	{
-		$this->render('index');
-	}
+// 	public function actionIndex()
+// 	{
+// 		$this->render('index');
+// 	}
 
 	/**
 	 * Displays the contact page
@@ -57,6 +57,18 @@ class SiteController extends Controller
 		}
 		$this->render('contact',array('model'=>$model));
 	}
+	
+// 	public function actionError() {
+		
+// 		if($error = Yii::app()->errorHandler->error)
+// 		{
+// 			if(Yii::app()->request->isAjaxRequest)
+// 				echo $error['message'];
+// 			else 
+// 				$this->render('error', $error);
+// 		}
+		
+// 	}
 
 	/**
 	 * Displays the login page
@@ -81,7 +93,7 @@ class SiteController extends Controller
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
 		// display the login form
-		$this->render('login',array('model'=>$model));
+		$this->render('index',array('model'=>$model));
 	}
 
 	/**
@@ -91,5 +103,23 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+	
+	
+	
+	public function actionRegistro()
+	{	
+		$model = new Usuario();
+		
+		if($_POST['Usuario']){
+		
+			$model->attributes = $_POST['Usuario'];
+			
+			$model->save();
+		}
+		
+		
+		$this->redirect('admin',array('model'=>$model));
+		
 	}
 }

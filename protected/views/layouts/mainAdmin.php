@@ -8,6 +8,7 @@
 	<?php 
 		echo Yii::app()->bootstrap->registerAllCss();
 		echo Yii::app()->bootstrap->registerCoreScripts();
+		
 	?>
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
