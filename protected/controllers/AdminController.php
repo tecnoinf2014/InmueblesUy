@@ -46,7 +46,7 @@ class AdminController extends Controller
 		$this->render('index',array('model'=>$model,'user'=>$user));
 		
 		
-	}
+	}//
 	public function actionLogout()
 	{
 		Yii::app()->user->logout();
