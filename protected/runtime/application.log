@@ -780,3 +780,1027 @@ REQUEST_URI=/InmueblesUy/index.php/site/contacto
 in /var/www/InmueblesUy/protected/views/site/contacto.php (74)
 in /var/www/InmueblesUy/protected/controllers/SiteController.php (60)
 in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:18 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:19 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:19 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:20 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:20 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:20 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:20 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:21 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:21 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:21 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:21 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:52:29 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(9): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/29 23:53:05 [error] [exception.CException] exception 'CException' with message 'ContactoController and its behaviors do not have a method or closure named "getDisplayTipoInmuebles".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/InmueblesUy/protected/views/contacto/index.php(99): CComponent->__call('getDisplayTipoI...', Array)
+#1 /var/www/InmueblesUy/protected/views/contacto/index.php(99): ContactoController->getDisplayTipoInmuebles()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#4 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#5 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/InmueblesUy/protected/controllers/ContactoController.php(10): CController->render('index', Array)
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('contacto/index')
+#13 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/
+---
+2014/06/29 23:53:09 [error] [exception.CException] exception 'CException' with message 'ContactoController and its behaviors do not have a method or closure named "getDisplayTipoInmuebles".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/InmueblesUy/protected/views/contacto/index.php(99): CComponent->__call('getDisplayTipoI...', Array)
+#1 /var/www/InmueblesUy/protected/views/contacto/index.php(99): ContactoController->getDisplayTipoInmuebles()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#4 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#5 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/InmueblesUy/protected/controllers/ContactoController.php(10): CController->render('index', Array)
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('contacto/index')
+#13 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/
+---
+2014/06/29 23:53:10 [error] [exception.CException] exception 'CException' with message 'ContactoController and its behaviors do not have a method or closure named "getDisplayTipoInmuebles".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/InmueblesUy/protected/views/contacto/index.php(99): CComponent->__call('getDisplayTipoI...', Array)
+#1 /var/www/InmueblesUy/protected/views/contacto/index.php(99): ContactoController->getDisplayTipoInmuebles()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#4 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#5 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/InmueblesUy/protected/controllers/ContactoController.php(10): CController->render('index', Array)
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('contacto/index')
+#13 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/
+---
+2014/06/29 23:53:10 [error] [exception.CException] exception 'CException' with message 'ContactoController and its behaviors do not have a method or closure named "getDisplayTipoInmuebles".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/InmueblesUy/protected/views/contacto/index.php(99): CComponent->__call('getDisplayTipoI...', Array)
+#1 /var/www/InmueblesUy/protected/views/contacto/index.php(99): ContactoController->getDisplayTipoInmuebles()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#4 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#5 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/InmueblesUy/protected/controllers/ContactoController.php(10): CController->render('index', Array)
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('contacto/index')
+#13 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/
+---
+2014/06/29 23:53:10 [error] [exception.CException] exception 'CException' with message 'ContactoController and its behaviors do not have a method or closure named "getDisplayTipoInmuebles".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/InmueblesUy/protected/views/contacto/index.php(99): CComponent->__call('getDisplayTipoI...', Array)
+#1 /var/www/InmueblesUy/protected/views/contacto/index.php(99): ContactoController->getDisplayTipoInmuebles()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#4 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#5 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/InmueblesUy/protected/controllers/ContactoController.php(10): CController->render('index', Array)
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('contacto/index')
+#13 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/
+---
+2014/06/29 23:53:10 [error] [exception.CException] exception 'CException' with message 'ContactoController and its behaviors do not have a method or closure named "getDisplayTipoInmuebles".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/InmueblesUy/protected/views/contacto/index.php(99): CComponent->__call('getDisplayTipoI...', Array)
+#1 /var/www/InmueblesUy/protected/views/contacto/index.php(99): ContactoController->getDisplayTipoInmuebles()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#4 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#5 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/InmueblesUy/protected/controllers/ContactoController.php(10): CController->render('index', Array)
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('contacto/index')
+#13 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/
+---
+2014/06/29 23:53:11 [error] [exception.CException] exception 'CException' with message 'ContactoController and its behaviors do not have a method or closure named "getDisplayTipoInmuebles".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/InmueblesUy/protected/views/contacto/index.php(99): CComponent->__call('getDisplayTipoI...', Array)
+#1 /var/www/InmueblesUy/protected/views/contacto/index.php(99): ContactoController->getDisplayTipoInmuebles()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#4 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#5 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/InmueblesUy/protected/controllers/ContactoController.php(10): CController->render('index', Array)
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('contacto/index')
+#13 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/
+---
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:56:21 [error] [php] include(/var/www/InmueblesUy/protected/extensions/phpamiler/JPhpMailer.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:401)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/models/EmailSender.php(9): spl_autoload_call()
+#1 /var/www/InmueblesUy/protected/controllers/ContactoController.php(25): EmailSender->enviar()
+#2 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#3 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#5 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/models/EmailSender.php (9)
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (25)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 01:59:12 [error] [php] trim() expects parameter 1 to be string, array given (/var/www/InmueblesUy/protected/extensions/phpmailer/class.phpmailer.php:489)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/ContactoController.php(25): EmailSender->enviar()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ContactoController->actionIndex()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): ContactoController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): ContactoController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): ContactoController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/contacto/index
+in /var/www/InmueblesUy/protected/extensions/phpmailer/class.phpmailer.php (489)
+in /var/www/InmueblesUy/protected/models/EmailSender.php (12)
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (25)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:01:28 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:02:46 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:03:03 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:04:00 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:07:31 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:08:42 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:13:02 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:05 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:14:18 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:15:59 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in /var/www/yii_framework/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /var/www/yii_framework/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /var/www/yii_framework/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/InmueblesUy/index.php/site/page?view=about
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/contacto/index
+---
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "apellido" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "telefono" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "comentario" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "tipo" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "contrato" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "habitaciones" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "banios" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "plantas" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "mtsCuadrados" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "precio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "garage" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "descripcionInmueble" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "calle" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "nroPuerta" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "apto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "depto" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
+2014/06/30 02:20:39 [warning] [application] Failed to set unsafe attribute "barrio" of "ContactoForm".
+in /var/www/InmueblesUy/protected/controllers/ContactoController.php (13)
+in /var/www/InmueblesUy/index.php (13)
