@@ -76,8 +76,8 @@
                         )
                     
 								),
-							array('label'=>'Clientes', 'url'=>array('/admin/clientes')),
-							array('label'=>'Empleados', 'url'=>array('/admin/empleados')),
+							array('label'=>'Clientes', 'url'=>array('/cliente/index')),
+							array('label'=>'Empleados', 'url'=>array('/usuario/index')),
 							array('label'=>'Portada', 'url'=>array('/admin/portada')),
 							array('label'=>'Portada', 'url'=>array('/admin/calendario')),
 							array('label'=>'Cerrar Sesion', 'url'=>array('/admin/logout'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
