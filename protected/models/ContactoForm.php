@@ -13,7 +13,9 @@ class ContactoForm extends CFormModel
 	
 	//datos del inmueble a publicar
 	public $tipo;
+	public $nombreTipo;
 	public $contrato;
+	public $nombreContrato;
 	public $habitaciones;
 	public $banios;
 	public $plantas;

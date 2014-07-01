@@ -43,13 +43,13 @@
 		<?php echo $form->error($model,'tipo_inmueble'); ?>
 	</div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'direccion'); ?>
-		<?php echo $form->textField($model,'direccion'); ?><!-- Aca un boton que llame iframe, popup
+		<?php echo $form->textField($model,'direccion'); ?> Aca un boton que llame iframe, popup
 		o algo por el estilo con create direccion, al retornar devolver el id de la direccion,
-		-->
+		
 		<?php echo $form->error($model,'direccion'); ?>
-	</div>
+	</div> -->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'tipo_contrato'); ?>
@@ -94,9 +94,19 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Siguiente'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<!-- <div class="row">
+		<?php
+		$idDir=new Direccion; 
+		$aux = $model->direccion;
+		?>
+
+	<?php echo CHtml::button('Modificar Direccion',  array(
+	        'submit'=>array('./direccion/update', 'id'=>intval($aux)))); ?>
+	</div> -->
