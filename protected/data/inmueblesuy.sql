@@ -148,7 +148,7 @@ DEFAULT CHARACTER SET = utf8;
 DROP TABLE IF EXISTS `inmuebles_uy`.`inmueble` ;
 
 CREATE  TABLE IF NOT EXISTS `inmuebles_uy`.`inmueble` (
-  `id` INT NOT NULL ,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `estado` INT NOT NULL ,
   `descripcion` VARCHAR(500) NULL ,
   `tipo_inmueble` INT NULL ,
