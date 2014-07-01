@@ -12,3 +12,11 @@ footer{
 	width: 120em;
 	height: 45em;
 }
+
+.label-form{
+	margin-right: 5px;
+}
+
+.label-radio{
+	display: inline;
+}
