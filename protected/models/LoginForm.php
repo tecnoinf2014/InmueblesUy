@@ -106,22 +106,6 @@ class LoginForm extends CFormModel
 		}			
 		
 		
-// 		$allusers = Usuario::model()->findAll();
-// 		$existe=false;
-// 		foreach ($allusers as $d){
-// 			if($d->email === $this->email && $d->password === $this->password){
-// 				$existe =true;
-// 			}else{
-// 				$existe=false;
-// 			}
-			
-// 		}
-// 		if($existe){
-// 			return true;
-// 		}else{
-// 			return false;
-// 		}
-		
 		
 	}
 }
