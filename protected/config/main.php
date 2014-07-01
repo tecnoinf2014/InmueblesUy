@@ -11,7 +11,7 @@ return array(
 	'name'=>'InmueblesUy',
 	'theme'=>'bootstrap',
 	'language'=>'es',
-// 	'theme'=>'classic',
+ 	//'theme'=>'classic',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
