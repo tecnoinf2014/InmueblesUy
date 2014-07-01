@@ -32,7 +32,7 @@
 				<div class="nav-collapse collapse">
 					<?php $this->widget('zii.widgets.CMenu',array(
 						'items'=>array(
-							array('label'=>'Home', 'url'=>array('/site/index')),
+							array('label'=>'Home', 'url'=>array('/InmuebleSite/admin')),
 							array('label'=>'Contacto', 'url'=>array('/contacto/index')),
 							array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 // 							array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest), solo para /admin

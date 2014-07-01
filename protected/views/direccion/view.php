@@ -1,3 +1,4 @@
+<div style="margin-top:100px; margin-left:40px;">
 <?php
 /* @var $this DireccionController */
 /* @var $model Direccion */
@@ -16,7 +17,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Direccion #<?php echo $model->id; ?></h1>
+<h1>Ver Direccion #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -30,3 +31,4 @@ $this->menu=array(
 		'departamentos',
 	),
 )); ?>
+</div>
