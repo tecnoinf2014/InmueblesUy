@@ -35,7 +35,7 @@
 					<?php $this->widget('zii.widgets.CMenu',array(
 						'items'=>array(
 							array('label'=>'Home', 'url'=>array('/admin/index')),
-							array('label'=>'Imuebles', 'url'=>array('/inmueble/index')
+							array('label'=>'Imuebles', 'url'=>array('/inmueble/index'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL
 								,
                         'linkOptions'=> array(
                             'class' => 'dropdown-toggle',
@@ -49,7 +49,9 @@
                             ),
                             array(
                                 'label' => '<i class="icon-briefcase"></i> Administrar Inmuebles',
-                                'url' => array('/inmueble/admin')
+                                'url' => array('/inmueble/admin'),
+                            		
+                            	
                             ),
                             /*array(
                                 'label' => '<i class="icon-user"></i> My Profile',
@@ -76,10 +78,10 @@
                         )
                     
 								),
-							array('label'=>'Clientes', 'url'=>array('/admin/clientes')),
-							array('label'=>'Empleados', 'url'=>array('/admin/empleados')),
-							array('label'=>'Portada', 'url'=>array('/admin/portada')),
-							array('label'=>'Portada', 'url'=>array('/admin/calendario')),
+							array('label'=>'Clientes', 'url'=>array('/admin/clientes'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							array('label'=>'Empleados', 'url'=>array('/admin/empleados'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							array('label'=>'Portada', 'url'=>array('/admin/portada'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							array('label'=>'Calendario', 'url'=>array('/admin/calendario'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
 							array('label'=>'Cerrar Sesion', 'url'=>array('/admin/logout'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
 						),
 							
