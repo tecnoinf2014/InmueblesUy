@@ -35,8 +35,8 @@
 						'items'=>array(
 							array('label'=>'Home', 'url'=>array('/admin/index')),
 							array('label'=>'Imuebles', 'url'=>array('/admin/inmuebles')),
-							array('label'=>'Clientes', 'url'=>array('/admin/clientes')),
-							array('label'=>'Empleados', 'url'=>array('/admin/empleados')),
+							array('label'=>'Clientes', 'url'=>array('/cliente/index')),
+							array('label'=>'Empleados', 'url'=>array('/usuario/index')),
 							array('label'=>'Portada', 'url'=>array('/admin/portada')),
 							array('label'=>'Portada', 'url'=>array('/admin/calendario')),
 							array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
