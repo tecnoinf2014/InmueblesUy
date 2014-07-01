@@ -29,4 +29,9 @@ $this->menu=array(
 		'password',
 		'telefono',
 	),
-)); ?>
+)); 
+
+
+
+
+?>
