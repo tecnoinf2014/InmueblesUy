@@ -2910,3 +2910,14 @@ Stack trace:
 REQUEST_URI=/InmueblesUy/index.php/admin/admin
 HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin/index
 ---
+2014/07/01 16:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "portada" solicitada.' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('portada')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('portada')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/portada')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin/portada
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin/index
+---
