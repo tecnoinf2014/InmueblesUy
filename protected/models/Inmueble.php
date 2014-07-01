@@ -44,8 +44,8 @@ class Inmueble extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, estado', 'required'),
-			array('id, estado, tipo_inmueble, direccion, tipo_contrato, mts2, cant_banios, cant_cuartos, cochera, plantas', 'numerical', 'integerOnly'=>true),
+			array('estado', 'required'),
+			array('estado, tipo_inmueble, direccion, tipo_contrato, mts2, cant_banios, cant_cuartos, cochera, plantas', 'numerical', 'integerOnly'=>true),
 			array('precio', 'numerical'),
 			array('descripcion', 'length', 'max'=>500),
 			// The following rule is used by search().
@@ -84,7 +84,7 @@ class Inmueble extends CActiveRecord
 			'tipo_inmueble' => 'Tipo Inmueble',
 			'direccion' => 'Direccion',
 			'tipo_contrato' => 'Tipo Contrato',
-			'precio' => 'Precio',
+			'precio' => 'Precio USD',
 			'mts2' => 'Mts2',
 			'cant_banios' => 'Cant Banios',
 			'cant_cuartos' => 'Cant Cuartos',

@@ -34,7 +34,47 @@
 					<?php $this->widget('zii.widgets.CMenu',array(
 						'items'=>array(
 							array('label'=>'Home', 'url'=>array('/admin/index')),
-							array('label'=>'Imuebles', 'url'=>array('/admin/inmuebles')),
+							array('label'=>'Imuebles', 'url'=>array('/inmueble/index')
+								,
+                        'linkOptions'=> array(
+                            'class' => 'dropdown-toggle',
+                            'data-toggle' => 'dropdown',
+                            ),
+                        'itemOptions' => array('class'=>'dropdown user'),
+                        'items' => array(
+                        	array(
+                                'label' => '<i class="icon-plus-sign"></i> Crear Inmueble',
+                                'url' => array('/direccion/create')
+                            ),
+                            array(
+                                'label' => '<i class="icon-briefcase"></i> Administrar Inmuebles',
+                                'url' => array('/inmueble/admin')
+                            ),
+                            /*array(
+                                'label' => '<i class="icon-user"></i> My Profile',
+                                'url' => '#'
+                            ),
+                            array(
+                                'label' => '<i class="icon-calendar"></i> My Calendar',
+                                'url' => '#',
+                            ),
+                            array(
+                                'label' => '<i class="icon-tasks"></i> My Tasks</a>',
+                                'url' => '#',
+                            ),
+                            array(
+                                'label' => '',
+                                array(
+                                    'class' => 'divider',
+                                )
+                            ),
+                            array(
+                                'label' => '<i class="icon-key"></i> Log Out',
+                                'url' => array('site/logout'),
+                            ),*/
+                        )
+                    
+								),
 							array('label'=>'Clientes', 'url'=>array('/cliente/index')),
 							array('label'=>'Empleados', 'url'=>array('/usuario/index')),
 							array('label'=>'Portada', 'url'=>array('/admin/portada')),
@@ -43,9 +83,18 @@
 // 							array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest), solo para /admin
 // 							array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest) /admin
 						),
+							
+'encodeLabel' => false,
+                'htmlOptions' => array('class'=> 'nav navbar-nav'),
+                'submenuHtmlOptions' => array(
+                    'class' => 'dropdown-menu',
+                )
+            ));
 
-						'htmlOptions' => array('class'=> 'nav navbar-nav'),
-					)); ?>
+
+				//		'htmlOptions' => array('class'=> 'nav navbar-nav'),
+					//));
+					 ?>
 				</div>	
 			</div>	
 		</div>			

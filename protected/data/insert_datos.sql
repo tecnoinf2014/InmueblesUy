@@ -40,3 +40,18 @@ INSERT INTO `departamento` VALUES(16, 'Treinta y tres');
 INSERT INTO `departamento` VALUES(17, 'Lavalleja');
 INSERT INTO `departamento` VALUES(18, 'Maldonado');
 INSERT INTO `departamento` VALUES(19, 'Rocha');
+
+/*********************************************************
+Direccion
+*********************************************************/
+
+INSERT INTO `direccion` VALUES(1, 'Prado', 'Luis A. Herera', 1212, 0, 0000000, 14);
+
+/*********************************************************
+Estado Inmueble
+*********************************************************/
+
+INSERT INTO `estado_inmueble` VALUES(1, 'Activo');
+INSERT INTO `estado_inmueble` VALUES(2, 'Pendiente');
+INSERT INTO `estado_inmueble` VALUES(3, 'Inactivo');
+INSERT INTO `estado_inmueble` VALUES(4, 'Bloqueado');
