@@ -9,7 +9,7 @@ class ContactoForm extends CFormModel
 	public $telefono;
 	public $comentario;
 	//publicar - consultar
-	public $accionUsuario; 
+	public $accion; 
 	
 	//datos del inmueble a publicar
 	public $tipo;
@@ -41,7 +41,7 @@ class ContactoForm extends CFormModel
 				// email has to be a valid email address
 				array('email', 'email'),
 				
-				array('accionUsuario, comentario, contrato, tipo, habitaciones, banios, plantas, mtsCuadrados, precio, garage, descripcionInmueble,  barrio, apto , nroPuerta, calle, depto', 'safe'),
+				array('accion, comentario, contrato, tipo, habitaciones, banios, plantas, mtsCuadrados, precio, garage, descripcionInmueble,  barrio, apto , nroPuerta, calle, depto', 'safe'),
 				
 				array('calle', 'validacionPublicarInmueble'),
 				// verifyCode needs to be entered correctly
@@ -53,6 +53,7 @@ class ContactoForm extends CFormModel
 	{
 		return array(
 			'precio'=>'Precio USD',
+			'accion'=>'',
 		);
 	}
 	

@@ -30,22 +30,11 @@ $this->breadcrumbs=array(
 			<hr>
 			
 			<div class="control-group">
-				<?php //echo $form->labelEx($model,'accion'); ?>
-				<?php //echo $form->radioButtonList($model, 'accion', 
-// 															array('c'=>'Consultar Inmueble','p'=>'Publicar Inmueble'),
-// 															array('class' => 'radio')); ?>
-				<div class="radio">
-				  <label>
-				    <input type="radio" name="accion" id="optionsRadios2" value="p" checked>
-				    	Publicar Inmueble
-				  </label>				
-				</div>				
-				<div class="radio">
-				  <label>
-				    <input type="radio" name="accion" id="optionsRadios1" value="c" >
-				    	Consultar Inmueble
-				  </label>
-				</div>
+				<?php  echo $form->labelEx($model,'accion'); ?>
+				<?php  echo $form->radioButtonList($model, 'accion', 
+  															array('p'=>'Publicar Inmueble', 'c'=>'Consultar Inmueble'),
+  															array('class' => 'radio label-radio')); ?>
+ 																			
 		 </div>	
 	
 	<div >	
@@ -203,11 +192,11 @@ $this->breadcrumbs=array(
 		$("#divPublicar").hide();
 		$("#divConsultar").hide();	
 		
-		if ($('input[name=accion]:checked').val() == "p"){
+		if ($('input[type=radio]:checked').val() == "p"){
 			$("#divPublicar").show();
 		}
 		
-		if ($('input[name=accion]:checked').val() == "c"){
+		if ($('input[type=radio]:checked').val() == "c"){
 			$("#divConsultar").show();
 		}
 	};
@@ -215,7 +204,7 @@ $this->breadcrumbs=array(
 	
 	$(function(){
 		showTipoAccion();
-		$("input[name=accion]").on("click", showTipoAccion);
+		$("input[type=radio]").on("click", showTipoAccion);
 	});
 //-->
 </script>
