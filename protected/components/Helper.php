@@ -24,14 +24,16 @@ class Helper
 				}
 				
 				if ($model->accion == Constantes::getAccionPublicar()){ 
-					
- 					$tipo =  TipoContrato::model()->findByPk($model->tipo, 'nombre');
+
+					$tipoInmueble = TipoInmueble::model()->findByPk($model->tipo)->tipo;
+ 					$tipoContrato =  TipoContrato::model()->findByPk($model->contrato)->nombre;
+ 					
 					$garage = $model->garage == 1 ? "Si" : "No";
 					
 					$body .= "<h2> Datos del Inmueble a Publicar </h2>" . 
 							 "<fieldset> <legend> Inmueble</legend>" .
-								 "<div style='display:block;'> <div style='display: table-cell; font-weight: bold; width: 120px;'>Tipo: </div> <div style='display: table-cell;'>" . $tipo . "</div> </div> " .
-								 "<div style='display:block;'> <div style='display: table-cell; font-weight: bold; width: 120px;'>Contrato: </div> <div style='display: table-cell;'>" .  $model->contrato . "</div> </div> " .
+								 "<div style='display:block;'> <div style='display: table-cell; font-weight: bold; width: 120px;'>Tipo: </div> <div style='display: table-cell;'>" . $tipoInmueble . "</div> </div> " .
+								 "<div style='display:block;'> <div style='display: table-cell; font-weight: bold; width: 120px;'>Contrato: </div> <div style='display: table-cell;'>" .  $tipoContrato . "</div> </div> " .
 								 "<div style='display:block;'> <div style='display: table-cell; font-weight: bold; width: 120px;'>Habitaciones: </div> <div style='display: table-cell;'>" .  $model->habitaciones . " </div></div> " .
 								 "<div style='display:block;'> <div style='display: table-cell; font-weight: bold; width: 120px;'>Banios: </div> <div style='display: table-cell;'>" .  $model->banios . "</div> </div> " .
 								 "<div style='display:block;'> <div style='display: table-cell; font-weight: bold; width: 120px;'>Plantas: </div> <div style='display: table-cell;'>" .  $model->plantas . "</div> </div> " .
