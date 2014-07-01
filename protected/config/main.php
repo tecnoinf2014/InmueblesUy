@@ -10,6 +10,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'InmueblesUy',
 	'theme'=>'bootstrap',
+	'language'=>'es',
 // 	'theme'=>'classic',
 
 	// preloading 'log' component
@@ -87,7 +88,7 @@ return array(
 				),
 				*/
 			),
-		),
+		),		
 	),
 
 	// application-level parameters that can be accessed

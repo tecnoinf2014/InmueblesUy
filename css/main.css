@@ -18,5 +18,5 @@ footer{
 }
 
 .label-radio{
-	display: inline;
+	display: inline-block;
 }

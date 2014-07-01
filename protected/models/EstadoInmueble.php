@@ -56,7 +56,7 @@ class EstadoInmueble extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'nombre' => 'Nombre',
+			'nombre' => 'Estado',
 		);
 	}
 
@@ -96,4 +96,5 @@ class EstadoInmueble extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
 }

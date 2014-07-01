@@ -58,7 +58,7 @@ class TipoContrato extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'nombre' => 'Nombre',
+			'nombre' => 'Tipo de Contrato',
 		);
 	}
 
