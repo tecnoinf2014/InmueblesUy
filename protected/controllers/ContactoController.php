@@ -14,15 +14,11 @@ class ContactoController extends Controller
 		{ 
 			$model->attributes=$_POST['ContactoForm'];
 			
-			//despues de validar, enviar mail.
-			
 			$envio = new EmailSender();
 			
 			$from = array(Yii::app()->params['adminEmail'], Yii::app()->name);
 			$to = array(Yii::app()->params['adminEmail'], Yii::app()->name);
 			$subjet = $model->accion == "p" ? "Nueva publicacion de Inmueble" : "Nueva consulta inmueble";
-			
-// 			echo var_dump($model);exit();
 			
 			$message = Helper::crearMensajeHtml($model);  
 			

@@ -9,7 +9,7 @@ class EmailSender{
 		$mail = new JPhpMailer();
 		$mail->CharSet = "UTF-8";
 		$mail->IsSMTP();
-		$mail->SMTPDebug  = 2;
+		$mail->SMTPDebug  = 0;
 		$mail->SMTPSecure = "ssl";
 		$mail->Host = 'smtp.gmail.com';
 		$mail->Port = 465;  ; //puerto smtp de gmail
@@ -24,6 +24,9 @@ class EmailSender{
 		
 		if(!$mail->Send()) {
 			echo "Error al enviar el E-mail: " . $mail->ErrorInfo; // di da error
+		}
+		else{
+			echo "Email enviado Correctamente"; // di da error
 		}
 	}
 }
