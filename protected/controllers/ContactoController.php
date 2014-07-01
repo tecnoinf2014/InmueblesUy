@@ -5,8 +5,10 @@ class ContactoController extends Controller
 	public $layout='//layouts/layoutClient';
 	
 	public function actionIndex()
-	{
+	{				
 		$model=new ContactoForm;
+		
+		$this->performAjaxValidation($model);
 		
 		if(isset($_POST['ContactoForm']))
 		{ 
@@ -20,12 +22,11 @@ class ContactoController extends Controller
 			$to = array(Yii::app()->params['adminEmail'], Yii::app()->name);
 			$subjet = $model->accion == "p" ? "Nueva publicacion de Inmueble" : "Nueva consulta inmueble";
 			
+// 			echo var_dump($model);exit();
+			
 			$message = Helper::crearMensajeHtml($model);  
 			
-			$envio->enviar($from, $to, $subjet, $message);
-			
-			
-			
+			$envio->enviar($from, $to, $subjet, $message);	
 		}
 		
 		$this->render('index', array('model'=>$model));
@@ -73,4 +74,13 @@ class ContactoController extends Controller
 		);
 	}
 	*/
+	
+	protected function performAjaxValidation($model)
+	{
+		if(isset($_POST['ajax']) && $_POST['ajax'] === 'contact-form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+	}
 }

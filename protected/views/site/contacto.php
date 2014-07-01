@@ -9,13 +9,14 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Cont&aacute;ctenos</h1>
+<h1>Cont&aacute;ctenossssssssssssssssssssssssssssssssssssss</h1>
 
 	<div class="form-horizontal">
 	
 	<?php $form=$this->beginWidget('CActiveForm', array(
 		'id'=>'contact-form',
-		'enableClientValidation'=>true,
+		'enableClientValidation'=>false,
+		'enableAjaxValidation'=>true,
 		'clientOptions'=>array(
 			'validateOnSubmit'=>true,
 		),
@@ -29,24 +30,12 @@ $this->breadcrumbs=array(
 			<h4>Acci&oacute;n a Realizar</h4>
 			<hr>
 			
-			<div class="control-group">
-				<?php //echo $form->labelEx($model,'accion'); ?>
-				<?php //echo $form->radioButtonList($model, 'accion', 
-// 															array('c'=>'Consultar Inmueble','p'=>'Publicar Inmueble'),
-// 															array('class' => 'radio')); ?>
-				<div class="radio">
-				  <label>
-				    <input type="radio" name="accion" id="optionsRadios2" value="p" checked>
-				    	Publicar Inmueble
-				  </label>				
-				</div>				
-				<div class="radio">
-				  <label>
-				    <input type="radio" name="accion" id="optionsRadios1" value="c" >
-				    	Consultar Inmueble
-				  </label>
-				</div>
-		 </div>	
+<!-- 			<div class="control-group"> -->
+				<?php //echo $form->labelEx($model,'accionUsuario'); ?>
+				<?php //echo $form->radioButtonList($model, 'accionUsuario', 
+//  															array('c'=>'Consultar Inmueble 2','p'=>'Publicar Inmueble'),
+//  															array('class' => 'radio')); ?>
+<!-- 		  </div>	 -->
 	
 	<div >	
 		<div class="well">		

@@ -9,9 +9,14 @@ class EmailSender{
 		$mail = new JPhpMailer();
 		$mail->CharSet = "UTF-8";
 		$mail->IsSMTP();
+		$mail->SMTPDebug  = 2;
+		$mail->SMTPSecure = "ssl";
 		$mail->Host = 'smtp.gmail.com';
-		$mail->Port = 465; //puerto smtp de gmail
-		$mail->SetFrom("juanma.miraballes@gmail.com");
+		$mail->Port = 465;  ; //puerto smtp de gmail
+		$mail->SetFrom( Yii::app()->params['adminEmail'], Yii::app()->name );
+		$mail->Username   = Yii::app()->params['adminEmail']; // SMTP account username
+		$mail->Password   = Constantes::getPasswordAdminEmail();
+		$mail->SMTPAuth   = true;
 		$mail->Subject = $subjet;
 		$mail->MsgHTML($message);
 		$mail->AddAddress($to[0], $to[1]);
