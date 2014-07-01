@@ -20,6 +20,10 @@ class Cliente extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
+	 * Juan
+	 * Fede
+	 * Agrego en develop 2
+	 * 
 	 */
 	public function tableName()
 	{
@@ -34,6 +38,8 @@ class Cliente extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('ci', 'unique', 'attributeName'=> 'ci', 'className'=>'Cliente', 'message'=>'La cedula ya existe.'),
+			array('email', 'unique', 'attributeName'=> 'email', 'className'=>'Cliente', 'message'=>'El email ya existe.'),
 			array('nombre, apellido, email, ci', 'required'),
 			array('nombre, apellido, email, telefono', 'length', 'max'=>45),
 			array('ci', 'length', 'max'=>10),

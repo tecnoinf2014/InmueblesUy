@@ -8,6 +8,7 @@
 	<?php 
 		echo Yii::app()->bootstrap->registerAllCss();
 		echo Yii::app()->bootstrap->registerCoreScripts();
+		
 	?>
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
@@ -34,18 +35,68 @@
 					<?php $this->widget('zii.widgets.CMenu',array(
 						'items'=>array(
 							array('label'=>'Home', 'url'=>array('/admin/index')),
-							array('label'=>'Imuebles', 'url'=>array('/admin/inmuebles')),
-							array('label'=>'Clientes', 'url'=>array('/admin/clientes')),
-							array('label'=>'Empleados', 'url'=>array('/admin/empleados')),
-							array('label'=>'Portada', 'url'=>array('/admin/portada')),
-							array('label'=>'Portada', 'url'=>array('/admin/calendario')),
-							array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-// 							array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest), solo para /admin
-// 							array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest) /admin
-						),
+							array('label'=>'Imuebles', 'url'=>array('/inmueble/index'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL
+								,
+                        'linkOptions'=> array(
+                            'class' => 'dropdown-toggle',
+                            'data-toggle' => 'dropdown',
+                            ),
+                        'itemOptions' => array('class'=>'dropdown user'),
+                        'items' => array(
+                        	array(
+                                'label' => '<i class="icon-plus-sign"></i> Crear Inmueble',
+                                'url' => array('/direccion/create')
+                            ),
+                            array(
+                                'label' => '<i class="icon-briefcase"></i> Administrar Inmuebles',
+                                'url' => array('/inmueble/admin'),
+                            		
+                            	
+                            ),
+                            /*array(
+                                'label' => '<i class="icon-user"></i> My Profile',
+                                'url' => '#'
+                            ),
+                            array(
+                                'label' => '<i class="icon-calendar"></i> My Calendar',
+                                'url' => '#',
+                            ),
+                            array(
+                                'label' => '<i class="icon-tasks"></i> My Tasks</a>',
+                                'url' => '#',
+                            ),
+                            array(
+                                'label' => '',
+                                array(
+                                    'class' => 'divider',
+                                )
+                            ),
+                            array(
+                                'label' => '<i class="icon-key"></i> Log Out',
+                                'url' => array('site/logout'),
+                            ),*/
+                        )
+                    
+								),
 
-						'htmlOptions' => array('class'=> 'nav navbar-nav'),
-					)); ?>
+							array('label'=>'Clientes', 'url'=>array('/cliente/index'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							array('label'=>'Empleados', 'url'=>array('/usuario/index'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							array('label'=>'Portada', 'url'=>array('/admin/portada'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							array('label'=>'Calendario', 'url'=>array('/admin/calendario'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							array('label'=>'Cerrar Sesion', 'url'=>array('/admin/logout'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+						),
+							
+'encodeLabel' => false,
+                'htmlOptions' => array('class'=> 'nav navbar-nav'),
+                'submenuHtmlOptions' => array(
+                    'class' => 'dropdown-menu',
+                )
+            ));
+
+
+				//		'htmlOptions' => array('class'=> 'nav navbar-nav'),
+					//));
+					 ?>
 				</div>	
 			</div>	
 		</div>			
