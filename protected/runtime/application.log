@@ -2921,3 +2921,28 @@ Stack trace:
 REQUEST_URI=/InmueblesUy/index.php/admin/portada
 HTTP_REFERER=http://localhost/InmueblesUy/index.php/admin/index
 ---
+2014/07/01 16:43:40 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '41154943' for key 'CI_UNIQUE'. La sentencia SQL ejecutada fue: INSERT INTO `cliente` (`nombre`, `apellido`, `email`, `ci`, `telefono`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /var/www/InmueblesUy/protected/controllers/ClienteController.php (73)
+in /var/www/InmueblesUy/index.php (13)
+2014/07/01 16:43:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '41154943' for key 'CI_UNIQUE'. The SQL statement executed was: INSERT INTO `cliente` (`nombre`, `apellido`, `email`, `ci`, `telefono`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /var/www/yii_framework/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /var/www/InmueblesUy/protected/controllers/ClienteController.php(73): CActiveRecord->save()
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): ClienteController->actionCreate()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('cliente/create')
+#14 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/InmueblesUy/index.php/cliente/create
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/cliente/create
+---
