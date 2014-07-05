@@ -2,7 +2,7 @@
 
 class AdminController extends Controller
 {
-	public $layout='//layouts/layoutAdmin';
+	public $layout='//layouts/layoutLarge';
 	
 	public function actionIndex()
 	{
@@ -76,5 +76,11 @@ class AdminController extends Controller
 		$this->actionIndex();
 	}
 
+	
+	public function actionCalendario(){
+		
+		$this->render('calendarioindex');
+		
+	}
 	
 }

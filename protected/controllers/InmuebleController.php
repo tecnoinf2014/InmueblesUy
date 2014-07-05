@@ -87,15 +87,21 @@ class InmuebleController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
+		$modelDir=new Direccion;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Inmueble']))
 		{
 			$model->attributes=$_POST['Inmueble'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if($model->save()){
+
+				$modelDir->id = $model->direccion;
+							
+				$this->redirect(array('Direccion/update','id'=>$modelDir->id));
+		}
+
+				/*$this->redirect(array('view','id'=>$model->id));*/
 		}
 
 		$this->render('update',array(
