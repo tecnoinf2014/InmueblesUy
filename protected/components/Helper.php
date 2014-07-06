@@ -7,6 +7,19 @@ class Helper
 		return array('1'=>'Uno', '2'=>'Dos', '3'=>'Tres', 'n'=>'Mas de tres');
 	}
 	
+	
+	
+	public static function getRoles(){
+		$roles = AuthItem::model()->findAll();
+		$arr = array();
+		foreach ($roles as &$rol) {
+	     $arr[$rol->name] = $rol->name;
+		}
+		
+		return $arr;
+	}
+	
+	
 	public static function crearMensajeHtml($model){
 	
 		$body = "<h2> Nuevo Contacto </h2>". 

@@ -54,6 +54,12 @@
 		<?php echo $form->textField($model,'telefono',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'telefono'); ?>
 	</div>
+	<div class="row">
+		<?php echo $form->labelEx($model,'rol'); ?>
+		
+		<?php echo $form->dropDownList($model,'rol', $this->getRolOptions()); ?>
+		<?php echo $form->error($model,'rol'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

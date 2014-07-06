@@ -32,69 +32,50 @@
 				</a>
 				
 				<div class="nav-collapse collapse">
-					<?php $this->widget('zii.widgets.CMenu',array(
+				
+					<?php 
+					$this->widget('zii.widgets.CMenu',array(
 						'items'=>array(
 							array('label'=>'Home', 'url'=>array('/admin/index')),
-							array('label'=>'Imuebles', 'url'=>array('/inmueble/index'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL
-								,
-                        'linkOptions'=> array(
-                            'class' => 'dropdown-toggle',
-                            'data-toggle' => 'dropdown',
-                            ),
-                        'itemOptions' => array('class'=>'dropdown user'),
-                        'items' => array(
-                        	array(
-                                'label' => '<i class="icon-plus-sign"></i> Crear Inmueble',
-                                'url' => array('/direccion/create')
-                            ),
-                            array(
-                                'label' => '<i class="icon-briefcase"></i> Administrar Inmuebles',
-                                'url' => array('/inmueble/admin'),
-                            		
-                            	
-                            ),
-                            /*array(
-                                'label' => '<i class="icon-user"></i> My Profile',
-                                'url' => '#'
-                            ),
-                            array(
-                                'label' => '<i class="icon-calendar"></i> My Calendar',
-                                'url' => '#',
-                            ),
-                            array(
-                                'label' => '<i class="icon-tasks"></i> My Tasks</a>',
-                                'url' => '#',
-                            ),
-                            array(
-                                'label' => '',
-                                array(
-                                    'class' => 'divider',
-                                )
-                            ),
-                            array(
-                                'label' => '<i class="icon-key"></i> Log Out',
-                                'url' => array('site/logout'),
-                            ),*/
-                        )
+								
+							array('label'=>'Imuebles', 'url'=>array('/inmueble/index'),'visible'=>Yii::app()->user->isGuest && Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")
+									,
+		                        'linkOptions'=> array(
+		                            'class' => 'dropdown-toggle',
+		                            'data-toggle' => 'dropdown',
+		                            ),
+		                        'itemOptions' => array('class'=>'dropdown user'),
+		                        'items' => array(
+		                        	array(
+		                                'label' => '<i class="icon-plus-sign"></i> Crear Inmueble',
+		                                'url' => array('/direccion/create')
+		                            ),
+		                            array(
+		                                'label' => '<i class="icon-briefcase"></i> Administrar Inmuebles',
+		                                'url' => array('/inmueble/admin'),
+		                            	),
+		                            
+		                        	)
                     
-								),
-							array('label'=>'Clientes', 'url'=>array('/cliente/index'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
-							array('label'=>'Empleados', 'url'=>array('/usuario/index'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
-							array('label'=>'Portada', 'url'=>array('/admin/portada'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
-							array('label'=>'Calendario', 'url'=>array('/admin/calendario'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
-							array('label'=>'Cerrar Sesion', 'url'=>array('/admin/logout'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							),
+								
+							array('label'=>'Clientes', 'url'=>array('/cliente/index'),'visible'=>!Yii::app()->user->isGuest & (Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director"))),
+							array('label'=>'Empleados', 'url'=>array('/usuario/index'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Director")),
+							array('label'=>'Portada', 'url'=>array('/admin/portada'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo")),
+							array('label'=>'Calendario', 'url'=>array('/admin/calendario'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")),
+							array('label'=>'Cerrar Sesion', 'url'=>array('/admin/logout'),'visible'=>!Yii::app()->user->isGuest),
+							
+							
+							array('label'=>'Bienvendio :'.Yii::app()->user->getState('email'),'url'=>array(''),'visible'=>!Yii::app()->user->isGuest),
 						),
 							
-'encodeLabel' => false,
+				'encodeLabel' => false,
                 'htmlOptions' => array('class'=> 'nav navbar-nav'),
                 'submenuHtmlOptions' => array(
                     'class' => 'dropdown-menu',
                 )
             ));
 
-
-				//		'htmlOptions' => array('class'=> 'nav navbar-nav'),
-					//));
 					 ?>
 				</div>	
 			</div>	
