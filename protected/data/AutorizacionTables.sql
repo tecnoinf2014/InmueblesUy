@@ -59,3 +59,57 @@ INSERT INTO `inmuebles_uy`.`AuthItem` (
 VALUES (
 'Director', '2', NULL , NULL , NULL
 );
+INSERT INTO `inmuebles_uy`.`AuthAssignment` (
+`itemname` ,
+`userid` ,
+`bizrule` ,
+`data`
+)
+VALUES (
+'Director', 'director2@gmail.com', NULL , NULL
+);
+INSERT INTO `inmuebles_uy`.`AuthAssignment` (
+`itemname` ,
+`userid` ,
+`bizrule` ,
+`data`
+)
+VALUES (
+'Administrativo', 'adminstrativo2@gmail.com', NULL , NULL
+);
+INSERT INTO `inmuebles_uy`.`AuthAssignment` (
+`itemname` ,
+`userid` ,
+`bizrule` ,
+`data`
+)
+VALUES (
+'Agente', 'agente2@gmail.com', NULL , NULL
+);
+/*USUARIOS CON PODER*/
+INSERT INTO `inmuebles_uy`.`usuario` (
+`id` ,
+`nombres` ,
+`apellido` ,
+`ci` ,
+`email` ,
+`password` ,
+`telefono`
+)
+VALUES (
+NULL , 'Administrador', 'Admin', '333333333', 'adminstrativo2@gmail.com', 'pass', '22222222222222'
+);
+INSERT INTO `inmuebles_uy`.`usuario` (`id`, `nombres`, `apellido`, `ci`, `email`, `password`, `telefono`) VALUES (NULL, 'Agente', 'Agente', '3332222222', 'agente2@gmail.com', 'pass', '222211111');
+INSERT INTO `inmuebles_uy`.`usuario` (
+`id` ,
+`nombres` ,
+`apellido` ,
+`ci` ,
+`email` ,
+`password` ,
+`telefono`
+)
+VALUES (
+NULL , 'Director', 'Director', '1111111111', 'director2@gmail.com', 'pass', '11111222222'
+);
+
