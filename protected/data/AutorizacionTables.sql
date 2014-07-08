@@ -112,4 +112,16 @@ INSERT INTO `inmuebles_uy`.`usuario` (
 VALUES (
 NULL , 'Director', 'Director', '1111111111', 'director2@gmail.com', 'pass', '11111222222'
 );
+INSERT INTO `inmuebles_uy`.`usuario` (
+`id` ,
+`nombres` ,
+`apellido` ,
+`ci` ,
+`email` ,
+`password` ,
+`telefono`
+)
+VALUES (
+NULL , 'Agente', 'Agente', '1133111111', 'agente2@gmail.com', 'pass', '1111122222'
+);
 
