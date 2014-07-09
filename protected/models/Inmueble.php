@@ -45,9 +45,10 @@ class Inmueble extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('estado', 'required'),
-			array('estado, tipo_inmueble, direccion, tipo_contrato, mts2, cant_banios, cant_cuartos, cochera, plantas', 'numerical', 'integerOnly'=>true),
+			array('estado, tipo_inmueble, direccion, tipo_contrato, mts2, cant_banios, cant_cuartos, plantas', 'numerical', 'integerOnly'=>true),
 			array('precio', 'numerical'),
 			array('descripcion', 'length', 'max'=>500),
+			array('cochera','safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, estado, descripcion, tipo_inmueble, direccion, tipo_contrato, precio, mts2, cant_banios, cant_cuartos, cochera, plantas', 'safe', 'on'=>'search'),
@@ -128,7 +129,23 @@ class Inmueble extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
-
+// 	public function getInmueblesPendAct(){
+		
+// 		$criteria=new Inmbueble;
+// // 		$criteria->with = array("estado0"=>array("id"=>2));
+// 		$criteria->with = array('estado0');
+// // 		$criteria->together = true;
+// // 		$criteria->select = array('id');
+// 		$criteria->condition='estado = 2 OR estado = 1 ';
+// 		$criteria->compare('estado',1);
+	
+// 		$criteria = $this->findAll(array("condition" => "estado = 1 or estado = 2 "));
+		
+// 		return new CActiveDataProvider($this, array(
+// 				'criteria'=>$criteria,
+// 		));
+	
+// 	}
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
@@ -139,4 +156,6 @@ class Inmueble extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	
 }

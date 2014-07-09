@@ -13,7 +13,7 @@
  * The followings are the available model relations:
  * @property Cliente $cliCompra
  * @property Cliente $cliVenta
- * @property Inmueble $inmueble0
+ * @property Inmueble $inmueble
  * @property TipoContrato $tipoContrato
  */
 class Transaccion extends CActiveRecord
@@ -85,7 +85,7 @@ class Transaccion extends CActiveRecord
 	public function search()
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
-
+		
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
@@ -109,4 +109,5 @@ class Transaccion extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
 }

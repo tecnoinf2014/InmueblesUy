@@ -60,6 +60,7 @@
 							),
 								
 							array('label'=>'Clientes', 'url'=>array('/cliente/index'),'visible'=>!Yii::app()->user->isGuest & (Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director"))),
+							array('label'=>'Transacciones', 'url'=>array('/transaccion/admin'),'visible'=>!Yii::app()->user->isGuest & (Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director"))),
 							array('label'=>'Empleados', 'url'=>array('/usuario/index'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Director")),
 							array('label'=>'Portada', 'url'=>array('/admin/portada'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo")),
 							array('label'=>'Calendario', 'url'=>array('/admin/calendario'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")),
