@@ -35,6 +35,7 @@
 			'cant_cuartos',
 			'cochera',
 			'plantas',
+			$model->imagens,
 		),
 	)); ?>
 

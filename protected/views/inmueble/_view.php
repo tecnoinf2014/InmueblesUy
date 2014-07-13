@@ -33,6 +33,8 @@
 	<?php echo CHtml::encode($data->precio); ?>
 	<br />
 
+	
+
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('mts2')); ?>:</b>
 	<?php echo CHtml::encode($data->mts2); ?>

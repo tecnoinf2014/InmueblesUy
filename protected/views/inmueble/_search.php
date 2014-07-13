@@ -70,7 +70,7 @@
 		<?php echo $form->label($model,'plantas'); ?>
 		<?php echo $form->textField($model,'plantas'); ?>
 	</div>
-
+	
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

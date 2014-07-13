@@ -32,13 +32,21 @@ class Imagen extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('img', 'file', 
+        		'types'=>'jpg, gif, png, bmp, jpeg',
+            	'maxSize'=>1024 * 1024 * 10, // 10MB
+                'tooLarge'=>'La imagen es mas grande que 10mb. Por favor suba una foto menor a 10 mb.',
+            	'allowEmpty' => false,
+            	'safe' =>true,
+         	),
 			array('type, name, img', 'required'),
 			array('inmueble, is_preview', 'numerical', 'integerOnly'=>true),
-			array('type', 'length', 'max'=>5),
-			array('name', 'length', 'max'=>45),
+			array('type', 'length', 'max'=>50),
+			array('name', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, type, name, img, inmueble, is_preview', 'safe', 'on'=>'search'),
+			array('is_preview', 'safe'),
 		);
 	}
 
@@ -108,5 +116,13 @@ class Imagen extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	public function loadModel($id)
+	{
+		$model=Imagen::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
 	}
 }

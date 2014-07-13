@@ -139,8 +139,10 @@ class InmuebleController extends Controller
 	 */
 	public function actionAdmin()
 	{
+
 		$model=new Inmueble('search');
 		$model->unsetAttributes();  // clear any default values
+	
 		if(isset($_GET['Inmueble']))
 			$model->attributes=$_GET['Inmueble'];
 		$this->render('admin',array(
@@ -176,4 +178,5 @@ class InmuebleController extends Controller
 			Yii::app()->end();
 		}
 	}
+
 }

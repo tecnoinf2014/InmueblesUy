@@ -81,7 +81,8 @@
 
 							array('label'=>'Clientes', 'url'=>array('/cliente/index'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
 							array('label'=>'Empleados', 'url'=>array('/usuario/index'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
-							array('label'=>'Portada', 'url'=>array('/admin/portada'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							array('label'=>'Crear Imagen', 'url'=>array('/imagen/create'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
+							array('label'=>'Portada', 'url'=>array('/imagen/getPortada'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
 							array('label'=>'Calendario', 'url'=>array('/admin/calendario'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
 							array('label'=>'Cerrar Sesion', 'url'=>array('/admin/logout'),'visible'=>!Yii::app()->user->getState('estadousuario')==NULL),
 						),
