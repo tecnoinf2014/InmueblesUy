@@ -83,7 +83,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'cochera'); ?>
-		<?php echo $form->textField($model,'cochera'); ?>
+		<?php echo $form->checkBox($model,'cochera',array('value'=>1, 'uncheckValue'=>0)); ?>
 		<?php echo $form->error($model,'cochera'); ?>
 	</div>
 

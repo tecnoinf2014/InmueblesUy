@@ -1,6 +1,6 @@
 <?php
 
-class UsuarioController extends Controller
+class TransaccionController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -28,17 +28,12 @@ class UsuarioController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','admin','delete','create','update'),
 				'users'=>array('*'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','admin','delete'),
+			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
-			array('deny',
-				'users'=>array('*'),
-			),
-		
 		);
 	}
 
@@ -48,6 +43,8 @@ class UsuarioController extends Controller
 	 */
 	public function actionView($id)
 	{
+		
+		
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -59,15 +56,11 @@ class UsuarioController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Usuario;
-		
-		
+		$model=new Transaccion;
 
-		if(isset($_POST['Usuario']))
+		if(isset($_POST['Transaccion']))
 		{
-			$model->attributes=$_POST['Usuario'];
-			
-			
+			$model->attributes=$_POST['Transaccion'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -75,10 +68,6 @@ class UsuarioController extends Controller
 		$this->render('create',array(
 			'model'=>$model,
 		));
-	}
-	
-	public function getRolOptions(){
-		return Helper::getRoles();
 	}
 
 	/**
@@ -93,9 +82,9 @@ class UsuarioController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Usuario']))
+		if(isset($_POST['Transaccion']))
 		{
-			$model->attributes=$_POST['Usuario'];
+			$model->attributes=$_POST['Transaccion'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -122,23 +111,23 @@ class UsuarioController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Usuario');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
-	}
+// 	public function actionIndex()
+// 	{
+// 		$dataProvider=new CActiveDataProvider('Transaccion');
+// 		$this->render('index',array(
+// 			'dataProvider'=>$dataProvider,
+// 		));
+// 	}
 
 	/**
 	 * Manages all models.
 	 */
 	public function actionAdmin()
 	{
-		$model=new Usuario('search');
+		$model=new Transaccion('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Usuario']))
-			$model->attributes=$_GET['Usuario'];
+		if(isset($_GET['Transaccion']))
+			$model->attributes=$_GET['Transaccion'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -149,12 +138,12 @@ class UsuarioController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Usuario the loaded model
+	 * @return Transaccion the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Usuario::model()->findByPk($id);
+		$model=Transaccion::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -162,11 +151,11 @@ class UsuarioController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Usuario $model the model to be validated
+	 * @param Transaccion $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='usuario-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='transaccion-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

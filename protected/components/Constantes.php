@@ -4,7 +4,9 @@ class Constantes
 {
 	const ACCION_CONSULTAR = "c";     
   	const ACCION_PUBLICAR = "p";  
-  	const PASSWORD_ADMIN_EMAIL = "codeforfood2014";    
+  	const PASSWORD_ADMIN_EMAIL = "codeforfood2014";  
+
+  	
 
 	public static function getAccionConsultar()
 	{

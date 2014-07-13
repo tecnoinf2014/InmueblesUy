@@ -43,51 +43,7 @@
 				<?php $this->endWidget(); ?>			
 			  </div>
 			</div>
-			 <div class="span5">
-			  <div id="registrodiv"  class="well">
-			  <?php $form2=$this->beginWidget('CActiveForm', array(
-				      'id'=>'login-form2',
-				      'action'=>$this->createUrl("admin/registro"),
-				      'htmlOptions'=>array("style"=>"text-align: left"),
-				      'enableClientValidation'=>true,
-				      'clientOptions'=>array(
-				        'validateOnSubmit'=>true,
-				      ),
-				    )); ?>
-				      
-				    <?php echo $form2->labelEx($user,'email'); ?>
-				    <?php echo $form2->textField($user,'email',array("class"=>"input-block-level","placeholder"=>"Email")); ?>
-				    <?php echo $form2->error($user,'email'); ?>
-				
-				    <?php echo $form2->labelEx($user,'password'); ?>
-				    <?php echo $form2->passwordField($user,'password',array("class"=>"input-block-level","placeholder"=>"Password")); ?>
-				    <?php echo $form2->error($user,'password'); ?>
-				    
-				    <?php echo $form2->labelEx($user,'nombres'); ?>
-				    <?php echo $form2->textField($user,'nombres',array("class"=>"input-block-level","placeholder"=>"Nombres")); ?>
-				    <?php echo $form2->error($user,'nombres'); ?>
-				    
-				    <?php echo $form2->labelEx($user,'apellido'); ?>
-				    <?php echo $form2->textField($user,'apellido',array("class"=>"input-block-level","placeholder"=>"Apellidos")); ?>
-				    <?php echo $form2->error($user,'apellido'); ?>
-				    
-				    <?php echo $form2->labelEx($user,'ci'); ?>
-				    <?php echo $form2->textField($user,'ci',array("class"=>"input-block-level","placeholder"=>"CI")); ?>
-				    <?php echo $form2->error($user,'ci'); ?>
-				    
-				    <?php echo $form2->labelEx($user,'telefono'); ?>
-				    <?php echo $form2->textField($user,'telefono',array("class"=>"input-block-level","placeholder"=>"Telefono")); ?>
-				    <?php echo $form2->error($user,'telefono'); ?>
-				    
-				  
-				  <br>
-				   
-				
-				    <?php echo CHtml::submitButton('Registro',array("class"=>"btn btn-primary pull-right")); ?>
-				<?php $this->endWidget(); ?>
-
-			  </div>
-			  </div>
+			 
 			  </div>
 			</div>
 			</div><!-- /.span4 fdsafds-->
@@ -123,11 +79,11 @@
 </section>
 <script type="text/javascript">
 
-<?php if(Yii::app()->user->getState('estadousuario')==NULL){?>
+<?php if(Yii::app()->user->isGuest){?>
 
 		
 		 $(document).ready(function(){
-			 $('#registrodiv').show();
+			
 			 $('#logindiv').show();
 			 
 		});
@@ -135,7 +91,6 @@
 <?php }else{?>
 		 
 	$(document).ready(function(){
-		 $('#registrodiv').hide();
 		 $('#logindiv').hide();
 	});
 	

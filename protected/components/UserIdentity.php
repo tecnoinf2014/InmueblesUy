@@ -7,8 +7,7 @@
  */
 class UserIdentity extends CUserIdentity
 {
-public $id;
-public $name;
+public $_id;
 
 const ERROR_NONE =0;	
 const ERROR_PASSWORD_INVALID =1;
@@ -27,15 +26,12 @@ const ERROR_USERNAME_INVALID=2;
 		
 		if(!$user == null)
 		{
-// 			$contraseña =sha1($this->password);
 			$contraseña =$this->password;
-
-			
 			if($user->password === $contraseña)
 			{
-				$this->id = $user->email;
-				$this->name = $user->nombres+ " " +$user->apellido;
-				$user->save();
+				$this->_id = $user->id;
+				$this->setState("email", $user->email);
+
 				$this->errorCode = self::ERROR_NONE;
 				return true;
 				
@@ -52,26 +48,6 @@ const ERROR_USERNAME_INVALID=2;
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
 			
 		}
-		
-			
-		
-		
-		
-// 		if(!isset($users[$this->username]))
-// 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-// 		elseif($users[$this->username]!==$this->password)
-// 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-// 		else
-// 			$this->errorCode=self::ERROR_NONE;
-// 		return !$this->errorCode;
 	}
 	
-	public function getId()
-	{ 
-		return $this->id;
-	}
-	public function getName()
-	{
-		return $this->name;
-	}
 }

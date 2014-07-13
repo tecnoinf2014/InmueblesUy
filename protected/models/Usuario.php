@@ -25,6 +25,7 @@ class Usuario extends CActiveRecord
 	public $email;
 	public $password;
 	public $telefono;
+	public $rol;
 	
 	
 	
@@ -57,8 +58,8 @@ class Usuario extends CActiveRecord
 			array('ci', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			
-			array('id, nombres, apellido, ci, email, password, telefono', 'safe', 'on'=>'search'),
+			array('rol','safe'),
+			array('id, nombres, apellido, ci, email, password, telefono,rol', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -87,6 +88,7 @@ class Usuario extends CActiveRecord
 			'email' => 'Email',
 			'password' => 'Password',
 			'telefono' => 'Telefono',
+				'rol'=>'Rol',
 		);
 	}
 
@@ -115,13 +117,17 @@ class Usuario extends CActiveRecord
 		$criteria->compare('email',$this->email,true);
 		$criteria->compare('password',$this->password,true);
 		$criteria->compare('telefono',$this->telefono,true);
+		$criteria->compare('rol',$this->rol,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
 	
-
+	protected function afterSave()
+	{
+		Yii::app()->authManager->assign($this->rol, $this->email);
+	}
 	
 	/**
 	 * Returns the static model of the specified AR class.

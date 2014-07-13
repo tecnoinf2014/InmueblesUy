@@ -88,7 +88,14 @@ return array(
 				),
 				*/
 			),
-		),		
+		),
+
+		'authManager'=>array(
+				'class'=>'CDbAuthManager',
+				'connectionID'=>'db',
+		),
+		
+		
 	),
 
 	// application-level parameters that can be accessed

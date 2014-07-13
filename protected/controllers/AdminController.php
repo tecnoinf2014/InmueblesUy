@@ -35,39 +35,15 @@ class AdminController extends Controller
 			
 			if( $model->login() && $model->validate()){  
 				$user = Usuario::model()->find('email=?',array($model->email));
-				
-				
-				Yii::app()->user->setState('estadousuario', $user);
-				
-			
-				
 			}
 
 		}
 		
-		
 		$this->render('index',array('model'=>$model,'user'=>$user));
 		
 		
-	}//
-	
-	public function actionRegistro()
-	{
-		$user = new Usuario();
-		$model = new LoginForm();
-	
-		if($_POST['Usuario']){
-	
-			$user->attributes = $_POST['Usuario'];
-				
-			$user->save();
-		}
-		
-	$this->actionIndex();
-	
 	}
-	
-	
+		
 	public function actionLogout()
 	{		
 		
