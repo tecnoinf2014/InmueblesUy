@@ -80,6 +80,15 @@ $this->widget('bootstrap.widgets.TbGridView', array(
 	'columns'=>array(
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
+			'template'=>'{view} {update} {delete} {add_image}',
+			'buttons'=>array(
+				'add_image' => array(
+					'label'=>'Subir Foto',
+					'icon'=>'icon-picture',
+					'url'=>'Yii::app()->createUrl("imagen/create", array("id"=>$data->id))',
+				),
+			),
+			// 'htmlOptions'=>array('style'=>'width: 220px',),
 		),
 		'id',
 		'estado0.nombre',

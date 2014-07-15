@@ -60,7 +60,7 @@ class ImagenController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionCreate($id)
 	{
 		$model=new Imagen;
 
@@ -70,14 +70,15 @@ class ImagenController extends Controller
 		 if(isset($_POST['Imagen']))
         {
             $model->attributes=$_POST['Imagen'];
- 
+ 			
             if(!empty($_FILES['Imagen']['tmp_name']['img']))
             {	
             	// echo var_dump('entre');exit(0);
                 $file = CUploadedFile::getInstance($model,'img');
                 $model->name = $file->name;
                 $model->type = $file->type;
-
+                $model->inmueble = $id;
+                $model->is_preview = 0;
 
                 $fp = fopen($file->tempName, 'r');
                 $content = fread($fp, filesize($file->tempName));
@@ -280,4 +281,5 @@ class ImagenController extends Controller
 			}
 			$this->redirect('../getPortada');
 	}
+	
 }
