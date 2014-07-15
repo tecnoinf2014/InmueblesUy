@@ -28,11 +28,11 @@ class InmuebleController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','comprar','autocomplete'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'autocomplete'),
 				'users'=>array('*'),//antes @
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -45,6 +45,30 @@ class InmuebleController extends Controller
 		);
 	}
 
+	
+	public function actionComprar($id){
+			
+		$model=new Transaccion;
+		
+		if(isset($_POST['Transaccion']))
+		{
+			$model->attributes=$_POST['Transaccion'];
+			
+			$model->inmueble = $id;
+		
+			if($model->save())
+				$this->redirect(array('admin'));
+		}
+		
+		$this->render('_reserva',array(
+				'model'=>$model,
+		));
+		
+		
+	
+	}
+	
+	
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
@@ -142,7 +166,6 @@ class InmuebleController extends Controller
 
 		$model=new Inmueble('search');
 		$model->unsetAttributes();  // clear any default values
-	
 		if(isset($_GET['Inmueble']))
 			$model->attributes=$_GET['Inmueble'];
 		$this->render('admin',array(
@@ -178,5 +201,22 @@ class InmuebleController extends Controller
 			Yii::app()->end();
 		}
 	}
-
+	
+	public function actionAutocomplete()
+	{
+	
+		$match = addcslashes($_POST['name_startsWith'], '%'); // escape LIKE's special characters
+		$q = new CDbCriteria( array(
+				'condition' => "t.descripcion LIKE :match",         // no quotes around :match
+				'params'    => array(':match' => "%$match%")  // Aha! Wildcards go here
+		) );
+		$result = Inmueble::model()->findAll($q);
+	
+// 		$return = array();
+// 		foreach ($result as $res){
+// 			$return[$res->id] = $res->descripcion;
+// 		}
+		echo CJSON::encode($result);
+// 		echo json_encode($return);
+	}
 }

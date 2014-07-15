@@ -2,6 +2,43 @@
 
 class Helper
 {
+	
+	public static  function convertModelToArray($models) {
+		if (is_array($models))
+			$arrayMode = TRUE;
+		else {
+			$models = array($models);
+			$arrayMode = FALSE;
+		}
+	
+		$result = array();
+		foreach ($models as $model) {
+			$attributes = $model->getAttributes();
+			$relations = array();
+			foreach ($model->relations() as $key => $related) {
+				if ($model->hasRelated($key)) {
+					$relations[$key] = convertModelToArray($model->$key);
+				}
+			}
+			$all = array_merge($attributes, $relations);
+	
+			if ($arrayMode)
+				array_push($result, $all);
+			else
+				$result = $all;
+		}
+		return $result;
+	}	
+	
+	public static function stringToDateModel($dateString){ 
+
+		return date ('Y-m-d H:i:s' , strtotime($dateString));
+	}
+	
+	public static function dateToStringModel($date){
+		
+	}
+	
 	public static function getOptions(){
 		
 		return array('1'=>'Uno', '2'=>'Dos', '3'=>'Tres', 'n'=>'Mas de tres');

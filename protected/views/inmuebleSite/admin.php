@@ -77,7 +77,7 @@ array(
 ?>
 </div>
 
-<h1>Busueda Inmuebles (IN WORKING)</h1>
+<h1>Busqueda Inmuebles</h1>
 
 <p>
 Puede utilizar operadores opcionales de comparacion (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

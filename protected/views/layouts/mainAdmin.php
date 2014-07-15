@@ -8,10 +8,10 @@
 	<?php 
 		echo Yii::app()->bootstrap->registerAllCss();
 		echo Yii::app()->bootstrap->registerCoreScripts();
-		
 	?>
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/format/format.js" type="text/javascript"> </script>
 	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -56,22 +56,18 @@
 		                            	),
 		                            
 		                        	)
-                    
-
 
 							),
 								
 							array('label'=>'Clientes', 'url'=>array('/cliente/index'),'visible'=>!Yii::app()->user->isGuest & (Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director"))),
 							array('label'=>'Transacciones', 'url'=>array('/transaccion/admin'),'visible'=>!Yii::app()->user->isGuest & (Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director"))),
-							array('label'=>'Crear Imagen', 'url'=>array('/imagen/create'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")),
 							array('label'=>'Empleados', 'url'=>array('/usuario/index'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Director")),
 							array('label'=>'Portada', 'url'=>array('/imagen/getPortada'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")),
-							array('label'=>'Calendario', 'url'=>array('/admin/calendario'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")),
+							array('label'=>'Calendario', 'url'=>array('/calendario/index'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")),
 							array('label'=>'Cerrar Sesion', 'url'=>array('/admin/logout'),'visible'=>!Yii::app()->user->isGuest),
 							
 							
 							array('label'=>'Bienvendio :'.Yii::app()->user->getState('email'),'url'=>array(''),'visible'=>!Yii::app()->user->isGuest),
-
 						),
 							
 				'encodeLabel' => false,

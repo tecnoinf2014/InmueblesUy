@@ -32,7 +32,7 @@ class UsuarioController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','admin','delete'),
+				'actions'=>array('create','update','admin','delete', 'autocomplete'),
 				'users'=>array('*'),
 			),
 			array('deny',
@@ -172,4 +172,21 @@ class UsuarioController extends Controller
 			Yii::app()->end();
 		}
 	}
+	
+	
+	public function actionAutocomplete()
+	{
+	
+		$match = addcslashes($_POST['name_startsWith'], '%'); // escape LIKE's special characters
+		$q = new CDbCriteria;
+		
+		$q->select = "t.*, aa.*";
+		$q->join = "LEFT JOIN `AuthAssignment` as `aa` ON t.email = aa.userid";
+		$q->addCondition("aa.itemname = :agente and t.email LIKE :match"  );
+		$q->params = array(':match' => "%$match%", ':agente' => Constantes::getRolAgente());
+		
+		$result = Usuario::model()->findAll($q);
+	
+		echo CJSON::encode($result);
+	}	
 }

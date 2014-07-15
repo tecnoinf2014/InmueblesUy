@@ -4238,3 +4238,196 @@ REQUEST_URI=/InmueblesUy/index.php/cliente/create
 HTTP_REFERER=http://localhost/InmueblesUy/index.php/cliente/create
 ---
 >>>>>>> refs/heads/localDevelop
+<<<<<<< HEAD
+2014/07/07 20:58:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'inmuebles_uy.AuthAssignment' doesn't exist. La sentencia SQL ejecutada fue: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+in /var/www/InmueblesUy/protected/views/layouts/mainAdmin.php (41)
+in /var/www/InmueblesUy/protected/views/layouts/layoutLarge.php (6)
+in /var/www/InmueblesUy/protected/controllers/AdminController.php (11)
+2014/07/07 20:58:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'inmuebles_uy.AuthAssignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid' in /var/www/yii_framework/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii_framework/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii_framework/framework/web/auth/CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 /var/www/yii_framework/framework/web/auth/CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 /var/www/yii_framework/framework/web/auth/CWebUser.php(815): CDbAuthManager->checkAccess('Administrativo', NULL, Array)
+#4 /var/www/InmueblesUy/protected/views/layouts/mainAdmin.php(41): CWebUser->checkAccess('Administrativo')
+#5 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#6 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#7 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#8 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate(' <div id="conte...')
+#9 /var/www/yii_framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput(' <div id="conte...')
+#10 /var/www/yii_framework/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii_framework/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/InmueblesUy/protected/views/layouts/layoutLarge.php(6): CBaseController->endContent()
+#13 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#14 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#15 /var/www/yii_framework/framework/web/CController.php(784): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#16 /var/www/InmueblesUy/protected/controllers/AdminController.php(11): CController->render('index', Array)
+#17 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#18 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#22 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#23 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin
+---
+2014/07/07 20:58:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "\"' in /var/www/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('\')
+#1 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/InmueblesUy/index.php/%5C
+---
+2014/07/07 20:58:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'inmuebles_uy.AuthAssignment' doesn't exist. La sentencia SQL ejecutada fue: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+in /var/www/InmueblesUy/protected/views/layouts/mainAdmin.php (41)
+in /var/www/InmueblesUy/protected/views/layouts/layoutLarge.php (6)
+in /var/www/InmueblesUy/protected/controllers/AdminController.php (11)
+2014/07/07 20:58:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'inmuebles_uy.AuthAssignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid' in /var/www/yii_framework/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii_framework/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii_framework/framework/web/auth/CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 /var/www/yii_framework/framework/web/auth/CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 /var/www/yii_framework/framework/web/auth/CWebUser.php(815): CDbAuthManager->checkAccess('Administrativo', NULL, Array)
+#4 /var/www/InmueblesUy/protected/views/layouts/mainAdmin.php(41): CWebUser->checkAccess('Administrativo')
+#5 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#6 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#7 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#8 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate(' <div id="conte...')
+#9 /var/www/yii_framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput(' <div id="conte...')
+#10 /var/www/yii_framework/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii_framework/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/InmueblesUy/protected/views/layouts/layoutLarge.php(6): CBaseController->endContent()
+#13 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/Inmueb...')
+#14 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Inmueb...', Array, true)
+#15 /var/www/yii_framework/framework/web/CController.php(784): CBaseController->renderFile('/var/www/Inmueb...', Array, true)
+#16 /var/www/InmueblesUy/protected/controllers/AdminController.php(11): CController->render('index', Array)
+#17 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#18 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#22 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#23 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/InmueblesUy/index.php/admin
+---
+=======
+2014/07/05 18:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "admin" solicitada.' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('calendario/admi...')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/calendario/admin
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/calendario/index
+---
+2014/07/05 18:08:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "admin" solicitada.' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('calendario/admi...')
+#3 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/InmueblesUy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/InmueblesUy/index.php/calendario/admin
+HTTP_REFERER=http://localhost/InmueblesUy/index.php/calendario/admin
+---
+2014/07/05 21:43:46 [error] [php] Use of undefined constant Calendario - assumed 'Calendario' (/var/www/InmueblesUy/protected/views/calendario/index.php:17)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): CalendarioController->renderFile()
+#1 /var/www/yii_framework/framework/web/CController.php(782): CalendarioController->renderPartial()
+#2 /var/www/InmueblesUy/protected/controllers/CalendarioController.php(9): CalendarioController->render()
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): CalendarioController->actionIndex()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii_framework/framework/web/CController.php(286): CalendarioController->runAction()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CalendarioController->runActionWithFilters()
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CalendarioController->run()
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/calendario/index
+in /var/www/InmueblesUy/protected/views/calendario/index.php (17)
+in /var/www/InmueblesUy/protected/controllers/CalendarioController.php (9)
+in /var/www/InmueblesUy/index.php (13)
+>>>>>>> refs/heads/develop
+2014/07/13 22:18:13 [error] [php] include(CArJSON.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/CalendarioController.php(65): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): CalendarioController->actionGetAgendaItemForMonth()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): CalendarioController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): CalendarioController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): CalendarioController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/calendario/getAgendaItemForMonth
+in /var/www/InmueblesUy/protected/controllers/CalendarioController.php (65)
+in /var/www/InmueblesUy/index.php (13)
+2014/07/13 22:18:51 [error] [php] include(CArJSON.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/CalendarioController.php(65): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): CalendarioController->actionGetAgendaItemForMonth()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): CalendarioController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): CalendarioController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): CalendarioController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/calendario/getAgendaItemForMonth
+in /var/www/InmueblesUy/protected/controllers/CalendarioController.php (65)
+in /var/www/InmueblesUy/index.php (13)
+2014/07/13 22:18:56 [error] [php] include(CArJSON.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/CalendarioController.php(65): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): CalendarioController->actionGetAgendaItemForMonth()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): CalendarioController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): CalendarioController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): CalendarioController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/calendario/getAgendaItemForMonth
+in /var/www/InmueblesUy/protected/controllers/CalendarioController.php (65)
+in /var/www/InmueblesUy/index.php (13)
+2014/07/13 22:22:27 [error] [php] Undefined variable: users (/var/www/InmueblesUy/protected/controllers/CalendarioController.php:77)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(286): CalendarioController->runAction()
+#1 /var/www/yii_framework/framework/web/CController.php(265): CalendarioController->runActionWithFilters()
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(282): CalendarioController->run()
+#3 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/calendario/getAgendaItemForMonth
+in /var/www/InmueblesUy/protected/controllers/CalendarioController.php (77)
+in /var/www/InmueblesUy/index.php (13)
+2014/07/13 22:24:16 [error] [php] include(CArJSON.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/InmueblesUy/protected/controllers/CalendarioController.php(65): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): CalendarioController->actionGetAgendaItemForMonth()
+#2 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii_framework/framework/web/CController.php(286): CalendarioController->runAction()
+#4 /var/www/yii_framework/framework/web/CController.php(265): CalendarioController->runActionWithFilters()
+#5 /var/www/yii_framework/framework/web/CWebApplication.php(282): CalendarioController->run()
+#6 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/InmueblesUy/index.php(13): CWebApplication->run()
+REQUEST_URI=/InmueblesUy/index.php/calendario/getAgendaItemForMonth
+in /var/www/InmueblesUy/protected/controllers/CalendarioController.php (65)
+in /var/www/InmueblesUy/index.php (13)

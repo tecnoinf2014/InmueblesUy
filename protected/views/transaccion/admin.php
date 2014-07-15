@@ -46,7 +46,11 @@ $('.search-form form').submit(function(){
 				'header'=>'Vendedor',
 				'value'=>'$data->cliVenta->nombre',
 		),
-		'inmueble0.descripcion',
+		array('name'=>'inmueble0.descripcion',
+				'header'=>'Descrpción del Inmueble',
+				'value'=>'$data->inmueble0->descripcion',
+		),
+		
 		'tipoContrato.nombre',
 		array(
 			'class'=>'CButtonColumn',

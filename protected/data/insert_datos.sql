@@ -51,7 +51,7 @@ INSERT INTO `direccion` VALUES(1, 'Prado', 'Luis A. Herera', 1212, 0, 0000000, 1
 Estado Inmueble
 *********************************************************/
 
-INSERT INTO `estado_inmueble` VALUES(1, 'Activo');
-INSERT INTO `estado_inmueble` VALUES(2, 'Pendiente');
+INSERT INTO `estado_inmueble` VALUES(1, 'Vendido');
+INSERT INTO `estado_inmueble` VALUES(2, 'Publicado');
 INSERT INTO `estado_inmueble` VALUES(3, 'Inactivo');
-INSERT INTO `estado_inmueble` VALUES(4, 'Bloqueado');
+INSERT INTO `estado_inmueble` VALUES(4, 'Pendiente');

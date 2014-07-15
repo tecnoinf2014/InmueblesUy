@@ -33,9 +33,21 @@
 			'mts2',
 			'cant_banios',
 			'cant_cuartos',
-			'cochera',
+			array(
+				'name'=>'cochera',
+				'type'=>'raw',
+				'value'=>CHtml::label($model->cochera == 1 ? "Si" : "No", "$model->cochera"),
+				),
+
 			'plantas',
 		),
 	)); ?>
+	
+	<div class="row buttons">
+		<?php echo CHtml::button('Reservar',array('submit' => array('inmueble/comprar', 'id'=>$model->id))); ?>
+	</div>
+	
+	
+	
 
 </div>

@@ -54,8 +54,7 @@ return array(
 		
 		'bootstrap'=>array(
 				'class'=>'bootstrap.components.Bootstrap',
-		),
-				
+		),				
 		/*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',

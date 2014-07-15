@@ -32,7 +32,7 @@ class ClienteController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'autocomplete'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -170,4 +170,17 @@ class ClienteController extends Controller
 			Yii::app()->end();
 		}
 	}
+	
+	public function actionAutocomplete()
+	{
+	
+		$match = addcslashes($_POST['name_startsWith'], '%'); // escape LIKE's special characters
+		$q = new CDbCriteria( array(
+				'condition' => "t.email LIKE :match",         // no quotes around :match
+				'params'    => array(':match' => "%$match%")  
+		) );
+		$result = Cliente::model()->findAll($q);
+	
+		echo CJSON::encode($result);
+	}	
 }
