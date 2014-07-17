@@ -14,7 +14,7 @@ window.location =url;
     });
 ");
 ?>
-
+<?php if ($arrayloco !== NULL) {?>
 <div align="center" style="background-color:#1b1b1b">
 <?php
 $this->widget('bootstrap.widgets.TbCarousel', array(
@@ -27,6 +27,7 @@ $this->widget('bootstrap.widgets.TbCarousel', array(
  ?>
 
  </div>
+<?php } ?>
 <div class="search-form" >
 <?php
 

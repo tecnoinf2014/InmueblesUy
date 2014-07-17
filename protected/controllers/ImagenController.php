@@ -214,34 +214,53 @@ class ImagenController extends Controller
 
     public function actiongetPortada()
     {
+    	$auxboolean = false;
 	 	$auxInmuebles = Inmueble::model()->findAll();
 		foreach ($auxInmuebles as $inm) {
 		$auxImagens = $inm->imagens;
 			foreach ($auxImagens as $imag) {
-				if ($imag->is_preview == 1)
-				$auxImage[] = $imag;
+				if ($imag->is_preview == 1){
+					$auxImage[] = $imag;
+					$auxboolean = true;
+				}
 			}
 		}
 		$arrayloco=array();
 		$auxImageItem=array();
-		foreach ($auxImage as $auxImageItem) 
+		if ($auxboolean==true){
+			foreach ($auxImage as $auxImageItem) 
+			{
+				//$this->loadImage(array('id'=>$auxImageItem->id))
+				$arrayloco[] =array('image'=>Yii::app()->controller->createUrl('imagen/loadImage', array('id'=>$auxImageItem->id)), 'label'=>'Inmueble', 'caption'=>$auxImageItem->inmueble0->descripcion,'imageOptions' => array('id'=>$auxImageItem->inmueble));		
+			}
+
+			$InmuebleDataProvider= new CActiveDataProvider('Imagen',array(
+	            'sort'=>array(
+	                    'defaultOrder'=>'inmueble DESC',
+	                ),
+	            'pagination'=>array(
+	                'pageSize'=>30,
+	            ),
+			));
+
+			$this->render('getPortada', array('arrayloco'=>$arrayloco,'imagenesPreview'=>$auxImage, 'DataProvider'=>$InmuebleDataProvider));
+		}
+		else
 		{
-			//$this->loadImage(array('id'=>$auxImageItem->id))
-			$arrayloco[] =array('image'=>Yii::app()->controller->createUrl('imagen/loadImage', array('id'=>$auxImageItem->id)), 'label'=>'Inmueble', 'caption'=>$auxImageItem->inmueble0->descripcion,'imageOptions' => array('id'=>$auxImageItem->inmueble));		
+			$InmuebleDataProvider= new CActiveDataProvider('Imagen',array(
+	            'sort'=>array(
+	                    'defaultOrder'=>'inmueble DESC',
+	                ),
+	            'pagination'=>array(
+	                'pageSize'=>30,
+	            ),
+			));
+			$arrayloco = array(); 
+			$auxImage = array();
+			$this->render('getPortada', array('arrayloco'=>$arrayloco,'imagenesPreview'=>$auxImage, 'DataProvider'=>$InmuebleDataProvider));
 		}
 
-		$InmuebleDataProvider= new CActiveDataProvider('Imagen',array(
-            'sort'=>array(
-                    'defaultOrder'=>'inmueble DESC',
-                ),
-            'pagination'=>array(
-                'pageSize'=>30,
-            ),
-		));
-
-
-
-		$this->render('getPortada', array('arrayloco'=>$arrayloco,'imagenesPreview'=>$auxImage, 'DataProvider'=>$InmuebleDataProvider));
+		
 	}
 
 	public function actionchangeIsPreview($id)
