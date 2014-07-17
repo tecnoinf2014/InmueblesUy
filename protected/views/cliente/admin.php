@@ -4,12 +4,12 @@
 
 $this->breadcrumbs=array(
 	'Clientes'=>array('index'),
-	'Manage',
+	'Admisnistrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Cliente', 'url'=>array('index')),
-	array('label'=>'Create Cliente', 'url'=>array('create')),
+	array('label'=>'Listar Cliente', 'url'=>array('index')),
+	array('label'=>'Crear Cliente', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Clientes</h1>
+<h1>Administrar Clientes</h1>
 
 <p>
 Podes combinar los siguientes operadores para las busquedas (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

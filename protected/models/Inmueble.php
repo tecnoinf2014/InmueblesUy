@@ -79,16 +79,16 @@ class Inmueble extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
+			'id' => 'Id',
 			'estado' => 'Estado',
-			'descripcion' => 'Descripcion',
-			'tipo_inmueble' => 'Tipo Inmueble',
-			'direccion' => 'Direccion',
-			'tipo_contrato' => 'Tipo Contrato',
+			'descripcion' => 'Descripción',
+			'tipo_inmueble' => 'Tipo de Inmueble',
+			'direccion' => 'Dirección',
+			'tipo_contrato' => 'Tipo de Contrato',
 			'precio' => 'Precio USD',
 			'mts2' => 'Mts2',
-			'cant_banios' => 'Cant Banios',
-			'cant_cuartos' => 'Cant Cuartos',
+			'cant_banios' => 'Cantidad de Baños',
+			'cant_cuartos' => 'Cantidad de Cuartos',
 			'cochera' => 'Cochera',
 			'plantas' => 'Plantas',
 		);

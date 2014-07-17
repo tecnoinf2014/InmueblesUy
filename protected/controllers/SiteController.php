@@ -29,7 +29,7 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->render('index');
+		$this->redirect(Yii::app()->controller->createUrl('/InmuebleSite/admin'));
 	}
 
 	/**

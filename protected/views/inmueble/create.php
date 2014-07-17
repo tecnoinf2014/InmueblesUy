@@ -9,8 +9,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Inmueble', 'url'=>array('index')),
-	array('label'=>'Manage Inmueble', 'url'=>array('admin')),
+	array('label'=>'Listar Inmueble', 'url'=>array('index')),
+	array('label'=>'Administrar Inmueble', 'url'=>array('admin')),
 );
 ?>
 

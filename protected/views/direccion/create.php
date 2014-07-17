@@ -1,4 +1,4 @@
-<div style=" margin-left:40px; margin-top:40px;">
+<div style=" margin-left:40px; margin-top:40px;text-align: center;">
 <?php
 /* @var $this DireccionController */
 /* @var $model Direccion */
@@ -13,8 +13,8 @@ $this->menu=array(
 	array('label'=>'Manage Direccion', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Ingreso Direccion del Inmueble</h1>
+<h1>1° PASO</h1>
+<h2>Ingreso Direccion del Inmueble</h2>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
 </div>

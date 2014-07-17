@@ -7,10 +7,6 @@ $this->breadcrumbs=array(
 	'Administrar',
 );
 
-$this->menu=array(
-	array('label'=>'Crear Transacción', 'url'=>array('create')),
-);
-
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
 	$('.search-form').toggle();
@@ -52,9 +48,7 @@ $('.search-form form').submit(function(){
 		),
 		
 		'tipoContrato.nombre',
-		array(
-			'class'=>'CButtonColumn',
-		),
+		
 	),
 )); ?>
 

@@ -27,17 +27,15 @@ class InmuebleController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','comprar','autocomplete'),
-				'users'=>array('*'),
+			array('allow', 
+				'actions'=>array('index','view','create','update','admin','delete','comprar','autocomplete','cargarimg'),
+				'users'=>array('@'),
+				'roles'=>array('Director','Administrativo'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'autocomplete'),
-				'users'=>array('*'),//antes @
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('*'), //antes admin
+			array('allow',
+					'actions'=>array('autocomplete'),
+					'users'=>array('@'),
+					'roles'=>array('Agente'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -108,7 +106,7 @@ class InmuebleController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($id)
+	public function actionUpdate($id,$bandera)
 	{
 		$model=$this->loadModel($id);
 		$modelDir=new Direccion;
@@ -121,16 +119,24 @@ class InmuebleController extends Controller
 			if($model->save()){
 
 				$modelDir->id = $model->direccion;
-							
+				if($bandera){			
 				$this->redirect(array('Direccion/update','id'=>$modelDir->id));
+				}
+				
 		}
 
 				/*$this->redirect(array('view','id'=>$model->id));*/
 		}
-
+		
+		if($bandera){
+			$this->render('update2',array(
+					'model'=>$model,
+			));
+		}else{
 		$this->render('update',array(
 			'model'=>$model,
 		));
+		}
 	}
 
 	/**
@@ -212,11 +218,25 @@ class InmuebleController extends Controller
 		) );
 		$result = Inmueble::model()->findAll($q);
 	
-// 		$return = array();
-// 		foreach ($result as $res){
-// 			$return[$res->id] = $res->descripcion;
-// 		}
 		echo CJSON::encode($result);
-// 		echo json_encode($return);
+
+	}
+	public function actionCargarimg($id){
+		
+		$imgenes = Imagen::model()->findAllByAttributes(array('inmueble'=>$id));
+	
+		$arrayimg=array();
+		$auxImageItem=array();
+		foreach ($imgenes as $auxImageItem) {
+	
+			$arrayimg[] =array('image'=>Yii::app()->controller->createUrl('imagen/loadImage', array('id'=>$auxImageItem->id)));
+	
+		}
+		return $arrayimg;
+// 		$this->render('_verimginmueble',array(
+// 				'arrayimg'=>$arrayimg,
+// 				'id'=>$id,
+// 		));
+	
 	}
 }

@@ -1,4 +1,4 @@
-<div style=" margin-left:40px; margin-top:40px;">
+<div style=" margin-left:40px; margin-top:40px; text-align: center;">
 <?php
 /* @var $this ImagenController */
 /* @var $model Imagen */
@@ -13,8 +13,5 @@ $this->menu=array(
 	array('label'=>'Manage Imagen', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Create Imagen</h1>
-
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
 </div>

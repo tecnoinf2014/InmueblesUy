@@ -27,9 +27,10 @@ class TransaccionController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','admin','delete','create','update'),
-				'users'=>array('*'),
+			array('allow',
+				'actions'=>array('admin'),
+				'users'=>array('@'),
+				'roles'=>array('Director','Administrativo'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -41,72 +42,72 @@ class TransaccionController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView($id)
-	{
+// 	public function actionView($id)
+// 	{
 		
 		
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
-	}
+// 		$this->render('view',array(
+// 			'model'=>$this->loadModel($id),
+// 		));
+// 	}
 
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
-	{
-		$model=new Transaccion;
+// 	public function actionCreate()
+// 	{
+// 		$model=new Transaccion;
 
-		if(isset($_POST['Transaccion']))
-		{
-			$model->attributes=$_POST['Transaccion'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
+// 		if(isset($_POST['Transaccion']))
+// 		{
+// 			$model->attributes=$_POST['Transaccion'];
+// 			if($model->save())
+// 				$this->redirect(array('view','id'=>$model->id));
+// 		}
 
-		$this->render('create',array(
-			'model'=>$model,
-		));
-	}
+// 		$this->render('create',array(
+// 			'model'=>$model,
+// 		));
+// 	}
 
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($id)
-	{
-		$model=$this->loadModel($id);
+// 	public function actionUpdate($id)
+// 	{
+// 		$model=$this->loadModel($id);
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+// 		// Uncomment the following line if AJAX validation is needed
+// 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Transaccion']))
-		{
-			$model->attributes=$_POST['Transaccion'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
+// 		if(isset($_POST['Transaccion']))
+// 		{
+// 			$model->attributes=$_POST['Transaccion'];
+// 			if($model->save())
+// 				$this->redirect(array('view','id'=>$model->id));
+// 		}
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
-	}
+// 		$this->render('update',array(
+// 			'model'=>$model,
+// 		));
+// 	}
 
 	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($id)
-	{
-		$this->loadModel($id)->delete();
+// 	public function actionDelete($id)
+// 	{
+// 		$this->loadModel($id)->delete();
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-	}
+// 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+// 		if(!isset($_GET['ajax']))
+// 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+// 	}
 
 	/**
 	 * Lists all models.
@@ -141,13 +142,13 @@ class TransaccionController extends Controller
 	 * @return Transaccion the loaded model
 	 * @throws CHttpException
 	 */
-	public function loadModel($id)
-	{
-		$model=Transaccion::model()->findByPk($id);
-		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
-		return $model;
-	}
+// 	public function loadModel($id)
+// 	{
+// 		$model=Transaccion::model()->findByPk($id);
+// 		if($model===null)
+// 			throw new CHttpException(404,'The requested page does not exist.');
+// 		return $model;
+// 	}
 
 	/**
 	 * Performs the AJAX validation.

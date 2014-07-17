@@ -51,32 +51,6 @@
 	</div>
 </section>
 
-<section class="inverse-bg">
-	<div class="container">
-		  <div class="row-fluid">
-			    <div class="span4">
-			      <h4><a href="#contribute">Contribute Icons</a></h4>
-			      <p>
-			        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodt non
-			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			      </p>
-			    </div>
-			    <div class="span4">
-			      <h4><a href="#" target="_blank">Help me buy an iMac</a></h4>
-			      <p>
-			      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo.
-			      </p>
-			    </div>
-			    <div class="span4">
-			      <h4><a href="#" target="_blank">My Amazon Wish List</a></h4>
-			      <p>
-			        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			      </p>
-			    </div>
-		  </div>
-	</div>
-</section>
 <script type="text/javascript">
 
 <?php if(Yii::app()->user->isGuest){?>

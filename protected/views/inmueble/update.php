@@ -1,4 +1,4 @@
-<div style="margin-top:100px; margin-left:40px;">
+<div style="margin-top:100px; margin-left:40px;text-align: center;">
 
 	<?php
 	/* @var $this InmuebleController */
@@ -11,14 +11,14 @@
 	);
 
 	$this->menu=array(
-		array('label'=>'List Inmueble', 'url'=>array('index')),
-		array('label'=>'Create Inmueble', 'url'=>array('create')),
-		array('label'=>'View Inmueble', 'url'=>array('view', 'id'=>$model->id)),
-		array('label'=>'Manage Inmueble', 'url'=>array('admin')),
+// 		array('label'=>'Lista Inmueble', 'url'=>array('index')),
+		array('label'=>'Crear Inmueble', 'url'=>array('create')),
+		array('label'=>'Ver Inmueble', 'url'=>array('view', 'id'=>$model->id)),
+		array('label'=>'Adminstrar Inmuebles', 'url'=>array('admin')),
 	);
 	?>
 
-	<h1>Modificar Inmueble <?php echo $model->id; ?></h1>
+	<h1>Inmueble #<?php echo $model->id; ?></h1>
 
 	<?php $this->renderPartial('_form', array('model'=>$model)); ?>
 

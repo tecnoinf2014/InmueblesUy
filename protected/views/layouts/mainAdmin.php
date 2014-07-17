@@ -27,7 +27,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				
-				<a class="brand" href="<?php echo "admin"?>">
+				<a class="brand" href="#">
 					<?php echo CHtml::encode(Yii::app()->name); ?>
 				</a>
 				
@@ -38,8 +38,7 @@
 						'items'=>array(
 							array('label'=>'Home', 'url'=>array('/admin/index')),
 								
-							array('label'=>'Imuebles', 'url'=>array('/inmueble/index'),'visible'=>Yii::app()->user->isGuest && Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")
-									,
+							array('label'=>'Imuebles', 'url'=>array('/inmueble/index'),'visible'=>!Yii::app()->user->isGuest & (Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")),
 		                        'linkOptions'=> array(
 		                            'class' => 'dropdown-toggle',
 		                            'data-toggle' => 'dropdown',
@@ -59,15 +58,16 @@
 
 							),
 								
-							array('label'=>'Clientes', 'url'=>array('/cliente/index'),'visible'=>!Yii::app()->user->isGuest & (Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director"))),
+							array('label'=>'Clientes', 'url'=>array('/cliente/admin'),'visible'=>!Yii::app()->user->isGuest & (Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director"))),
 							array('label'=>'Transacciones', 'url'=>array('/transaccion/admin'),'visible'=>!Yii::app()->user->isGuest & (Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director"))),
-							array('label'=>'Empleados', 'url'=>array('/usuario/index'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Director")),
+							array('label'=>'Empleados', 'url'=>array('/usuario/admin'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Director")),
 							array('label'=>'Portada', 'url'=>array('/imagen/getPortada'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")),
-							array('label'=>'Calendario', 'url'=>array('/calendario/index'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")),
+							array('label'=>'Calendario', 'url'=>array('/calendario/index'),'visible'=>!Yii::app()->user->isGuest & Yii::app()->user->checkAccess("Administrativo") || Yii::app()->user->checkAccess("Director")  || Yii::app()->user->checkAccess("Agente")),
 							array('label'=>'Cerrar Sesion', 'url'=>array('/admin/logout'),'visible'=>!Yii::app()->user->isGuest),
 							
 							
 							array('label'=>'Bienvendio :'.Yii::app()->user->getState('email'),'url'=>array(''),'visible'=>!Yii::app()->user->isGuest),
+
 						),
 							
 				'encodeLabel' => false,
@@ -93,3 +93,4 @@
 	
 </body>
 </html>
+

@@ -1,3 +1,4 @@
+<div style="margin-top:100px; margin-left:40px; text-align: center; margin-bottom: 170px;">
 <?php
 /* @var $this ImagenController */
 /* @var $model Imagen */
@@ -16,6 +17,9 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Imagen <?php echo $model->id; ?></h1>
+<h1>Imagen #<?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+
+</div>
+<h1><a href="javascript:history.back()">Volver Atrás</a></h1>

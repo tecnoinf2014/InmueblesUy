@@ -28,16 +28,12 @@ class InmuebleSiteController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','cargarimg','admin'),
 				'users'=>array('*'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('*'),//antes @
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('*'), //antes admin
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+					'actions'=>array('index','view','cargarimg','admin','delete','create','update'),
+					'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -141,12 +137,30 @@ class InmuebleSiteController extends Controller
 	{
 		$model=new Inmueble('search');
 		$model->unsetAttributes();  // clear any default values
+		
+
+		$auxInmuebles = Inmueble::model()->findAll();
+		foreach ($auxInmuebles as $inm) {
+			$auxImagens = $inm->imagens;
+			foreach ($auxImagens as $imag) {
+				if ($imag->is_preview == 1)
+					$auxImage[] = $imag;
+			}
+		}
+		$arrayloco=array();
+		$auxImageItem=array();
+		foreach ($auxImage as $auxImageItem) {
+		
+			$arrayloco[] =array('image'=>Yii::app()->controller->createUrl('imagen/loadImage', array('id'=>$auxImageItem->id)), 'label'=>'Inmueble', 'caption'=>$auxImageItem->inmueble0->descripcion,'imageOptions' => array('id'=>$auxImageItem->inmueble));
+		
+		}
+	
 		if(isset($_GET['Inmueble']))
 			$model->attributes=$_GET['Inmueble'];
 		$this->render('admin',array(
 			'model'=>$model,
+			'arrayloco'=>$arrayloco,
 		));
-		//echo var_dump($model);exit(0);
 	}
 
 	/**
@@ -175,5 +189,25 @@ class InmuebleSiteController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+	
+	public function actionCargarimg($id){
+		
+		$imgenes = Imagen::model()->findAllByAttributes(array('inmueble'=>$id));
+		
+		$arrayimg=array();
+		$auxImageItem=array();
+		foreach ($imgenes as $auxImageItem) {
+		
+			$arrayimg[] =array('image'=>Yii::app()->controller->createUrl('imagen/loadImage', array('id'=>$auxImageItem->id)));
+		
+		}
+		
+		
+		$this->render('_verimginmueble',array(
+				'arrayimg'=>$arrayimg,
+				'id'=>$id,
+		));
+		
 	}
 }

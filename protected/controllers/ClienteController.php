@@ -28,16 +28,14 @@ class ClienteController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
+					'actions'=>array('index','view','create','update','admin','delete','autocomplete'),
+					'users'=>array('@'),
+					'roles'=>array('Director','Administrativo'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'autocomplete'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('*'),
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+					'actions'=>array('autocomplete'),
+					'users'=>array('@'),
+					'roles'=>array('Agente'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -182,5 +180,6 @@ class ClienteController extends Controller
 		$result = Cliente::model()->findAll($q);
 	
 		echo CJSON::encode($result);
-	}	
+	}
+		
 }

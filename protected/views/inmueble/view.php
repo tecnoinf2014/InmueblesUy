@@ -8,17 +8,17 @@
 		'Inmuebles'=>array('index'),
 		$model->id,
 	);
-
+$bandera=false;
 	$this->menu=array(
-		array('label'=>'List Inmueble', 'url'=>array('index')),
-		array('label'=>'Create Inmueble', 'url'=>array('create')),
-		array('label'=>'Update Inmueble', 'url'=>array('update', 'id'=>$model->id)),
-		array('label'=>'Delete Inmueble', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-		array('label'=>'Manage Inmueble', 'url'=>array('admin')),
+		array('label'=>'Lista de Inmueble', 'url'=>array('index')),
+		array('label'=>'Crear Inmueble', 'url'=>array('create')),
+		array('label'=>'Actualizar Inmueble', 'url'=>array('update', 'id'=>$model->id,'bandera'=>$bandera)),
+		array('label'=>'Borrar Inmueble', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Estas seguro/a que deseas borrar este inmueble?')),
+		array('label'=>'Admisitrar Inmuebles', 'url'=>array('admin')),
 	);
 	?>
 
-	<h1>Ver Inmueble #<?php echo $model->id; ?></h1>
+	<h1>Inmueble #<?php echo $model->id; ?></h1>
 
 	<?php $this->widget('zii.widgets.CDetailView', array(
 		'data'=>$model,
@@ -43,8 +43,8 @@
 		),
 	)); ?>
 	
-	<div class="row buttons">
-		<?php echo CHtml::button('Reservar',array('submit' => array('inmueble/comprar', 'id'=>$model->id))); ?>
+	<div class="row buttons" style="text-align: center;">
+		<?php echo "¿Desea reservar el Inmueble ? ";echo CHtml::button('Reservar',array('submit' => array('inmueble/comprar', 'id'=>$model->id))); ?>
 	</div>
 	
 	

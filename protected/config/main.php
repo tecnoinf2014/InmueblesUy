@@ -38,6 +38,11 @@ return array(
 
 	// application components
 	'components'=>array(
+			
+		'consumer'=>array(
+					'class'=>'application.components.ConsumerWS',
+					'ws_url'=>'http://www.webservicex.net/FinanceService.asmx?WSDL',
+		),			
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,

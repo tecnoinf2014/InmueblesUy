@@ -40,3 +40,4 @@
 	)); ?>
 
 </div>
+<h1><a href="javascript:history.back()">Volver Atrás</a></h1>

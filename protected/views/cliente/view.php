@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Cliente', 'url'=>array('index')),
-	array('label'=>'Create Cliente', 'url'=>array('create')),
-	array('label'=>'Update Cliente', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Cliente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Cliente', 'url'=>array('admin')),
+	array('label'=>'Listar Cliente', 'url'=>array('index')),
+	array('label'=>'Crear Cliente', 'url'=>array('create')),
+	array('label'=>'Actualizar Cliente', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Borrar Cliente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Cliente', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Cliente #<?php echo $model->id; ?></h1>
+<h1>Cliente #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

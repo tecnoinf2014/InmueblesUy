@@ -53,10 +53,4 @@ class AdminController extends Controller
 	}
 
 	
-	public function actionCalendario(){
-		
-		$this->render('calendarioindex');
-		
-	}
-	
 }

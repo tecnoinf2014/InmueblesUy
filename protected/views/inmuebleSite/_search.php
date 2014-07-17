@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="wide form" style="margin-left:40px;">
+<div class="wide form" style="margin-left:256px;">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
@@ -92,10 +92,33 @@
 		<?php echo $form->textField($model,'plantas'); ?>
 	</div>
  -->
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+	<div class="big buttons" style="margin-left: 293px;margin-top: 20px;">
+		<?php echo CHtml::submitButton('BUSCAR'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
 </div><!-- search-form -->
+ <?php $this->widget('bootstrap.widgets.TbGridView', array(
+	'id'=>'inmueble-grid',
+	'type'=>'hover',
+	'dataProvider'=>$model->search(),
+	'filter'=>$model,
+	'columns'=>array(
+		'estado0.nombre',
+		'descripcion',
+		'tipoInmueble.tipo',
+		'direccion0.calle',
+		'direccion0.nro_puerta',
+		'tipoContrato.nombre',
+		array(
+	        'header' => 'Ver Imagenes',
+	        'type'=>'raw',
+         	'value' => '"<a href=/InmueblesUy/index.php/InmuebleSite/cargarimg/$data->id><img src=/InmueblesUy/images/camera.png></img></a>"',
+    	),
+		array(
+		
+		'class'=>'bootstrap.widgets.TbButtonColumn', 'updateButtonIcon'=>'false', 'deleteButtonIcon'=>'false'
+		),
+	),
+)); ?>

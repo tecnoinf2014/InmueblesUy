@@ -1,7 +1,7 @@
 
 
 $(function(){
-	
+	$("#add-event-form").css('position','absolute');
 	function closeDialog () {
 		
 		$("#startDate").datepicker("destroy");
@@ -50,6 +50,9 @@ $(function(){
 		show: false,
 		backdrop: false,
 	});//dialog 
+	
+	
+	
 	
 	function agregarEventoACalendario(){
 		
